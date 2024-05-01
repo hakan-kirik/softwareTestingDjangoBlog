@@ -1,14 +1,24 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from blog.models import BlogPost, CustomUser
+from blog.models import BlogPost, Category, CustomUser, Tag,Comment
 from django.utils.safestring import mark_safe
 # Register your models here.
 
+class CommentInline(admin.StackedInline):
+    model = Comment
+    extra = 0
+
 class BlogPostAdmin(admin.ModelAdmin):
-    list_display = ['title', 'author', 'created_at', 'display_cover_image']
-    search_fields = ['title']
-    list_filter = ['created_at']
+    inlines = [CommentInline]
+    list_display = ['title', 'author', 'created_at', 'display_cover_image','display_tags']
+    search_fields = ['title', 'author__username', 'category__name', 'tags__name']
+    list_filter = ['created_at', 'category__name', 'tags__name']
     date_hierarchy = 'created_at'
+
+    def display_tags(self, obj):
+        return ", ".join([tag.name for tag in obj.tags.all()])
+
+    display_tags.short_description = 'Tags'
 
     def display_cover_image(self, obj):
         if obj.cover_image:
@@ -71,5 +81,13 @@ class CustomUserAdmin(UserAdmin):
     def has_add_permission(self, request):
         # Sadece süper kullanıcılara ekleme izni ver
         return request.user.is_superuser
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['author', 'blog_post', 'created_at']
+    search_fields = ['author__username', 'blog_post__title']
+    list_filter = ['created_at']
+
+admin.site.register(Comment, CommentAdmin)
 
 admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.register(Category)
+admin.site.register(Tag)
