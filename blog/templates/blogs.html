@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block pagetitle %}
+<section class="page-title page-title-layout14 bg-overlay bg-overlay-gradient bg-parallax text-center">
+    <div class="bg-img"><img src="assets/images/page-titles/14.jpg" alt="background"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="pagetitle__heading">Our Blog</h1>
+          <nav>
+            <ol class="breadcrumb justify-content-center mb-0 mt-80">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Blog</li>
+            </ol>
+          </nav>
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.page-title -->
+
+  
+{% endblock  %}
+
+
+{% block content %}
+<section class="blog-grid">
+  <div class="container">
+      <div class="row">
+          {% for blog_post in blog_posts %}
+          <div class="col-sm-12 col-md-6 col-lg-4">
+              <!-- Blog Item -->
+              <div class="post-item">
+                  <!-- Blog Image -->
+                  <div class="post__img">
+                      <a href="{% url 'blog-detail' blog_post.pk %}">
+                        {% if blog_post.cover_image %}
+                            <img src="{{ blog_post.cover_image.url }}" alt="{{ blog_post.title }}">
+                        {% else %}
+                            <p>No cover image available</p>
+                        {% endif %}
+                      </a>
+                  </div>
+                  <!-- Blog Content -->
+                  <div class="post__body">
+                      <div class="post__meta-cat">
+                          {% for category in blog_post.category.all %}
+                          <a href="#">{{ category.name }}</a>
+                          {% endfor %}
+                      </div>
+                      <h4 class="post__title"><a href="{% url 'blog-detail' blog_post.pk %}">{{ blog_post.title }}</a></h4>
+                      <div class="post__meta">
+                          <span class="post__meta-date">{{ blog_post.created_at|date:"M d, Y" }}</span>
+                      </div>
+                      <p class="post__desc">{{ blog_post.content|truncatechars:200 }}</p>
+
+                      <a href="{% url 'blog-detail' blog_post.pk %}" class="btn btn__secondary btn__link">
+                          <span>Daha Fazla Oku</span>
+                          <i class="icon-arrow-right"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+      <!-- Pagination -->
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+              <nav class="pagination-area">
+                  <ul class="pagination justify-content-center">
+                      {% if blog_posts.has_previous %}
+                      <li><a href="?page=1">&laquo;</a></li>
+                      <li><a href="?page={{ blog_posts.previous_page_number }}">{{ blog_posts.previous_page_number }}</a></li>
+                      {% endif %}
+                      <li class="active"><a href="?page={{ blog_posts.number }}">{{ blog_posts.number }}</a></li>
+                      {% if blog_posts.has_next %}
+                      <li><a href="?page={{ blog_posts.next_page_number }}">{{ blog_posts.next_page_number }}</a></li>
+                      <li><a href="?page={{ blog_posts.paginator.num_pages }}">&raquo;</a></li>
+                      {% endif %}
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      <!-- End Pagination -->
+  </div>
+</section>
+<!-- End Blog List -->
+{% endblock content %}

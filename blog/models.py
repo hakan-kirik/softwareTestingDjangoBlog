@@ -3,6 +3,7 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 from django.contrib.auth import get_user_model
+from django.urls import reverse
 
     
 class CustomUser(AbstractUser):
@@ -35,6 +36,8 @@ class BlogPost(models.Model):
     tags = models.ManyToManyField(Tag)
     def __str__(self):
         return self.title
+    def get_absolute_url(self):
+        return reverse('blog-detail', kwargs={'pk': self.pk}) 
     
 
 class Comment(models.Model):

@@ -1,0 +1,259 @@
+{% extends "layout.html" %}
+
+{% block pagetitle %}
+
+
+  <section class="page-title page-title-layout15 text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <nav>
+            <ol class="breadcrumb justify-content-center mb-0">
+                {% for item in breadcrumb %}
+                <li class="breadcrumb-item"><a href="{{ item.1 }}">{{ item.0 }}</a></li>
+                {% endfor %}
+              <li class="breadcrumb-item active" aria-current="page">{{ page_title }}</li>
+            </ol>
+          </nav>
+        </div><!-- /.col-xl-6 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.page-title -->
+{% endblock %}
+
+{% block content %}
+
+<section class="blog blog-single pt-0 pb-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="post-item mb-0">
+            <div class="post__img">
+              <img src="{{ blog_post.cover_image.url }}" alt="{{ blog_post.title }}">
+            </div><!-- /.post-img -->
+            <div class="post__meta d-flex align-items-center mb-20">
+              <span class="post__meta-date">{{ blog_post.created_at|date:"M d, Y" }}</span>
+              <div class="post__meta-cat">
+                <a href="#">{{ blog_post.category.name }}</a>
+              </div>
+              <!-- /.blog-meta-cat -->
+              <span class="post__meta-author"><span class="color-secondary">By:</span>
+                <a href="#">{{ blog_post.author.username }}</a>
+              </span>
+            </div><!-- /.blog-meta -->
+            <h1 class="post__title mb-30">
+              {{ blog_post.title }}
+            </h1>
+            <div class="post__desc">
+              {{ blog_post.content|safe }}
+            </div><!-- /.blog-desc -->
+          </div><!-- /.post-item -->
+          <div class="bordered-box mb-40">
+            <div class="row row-no-gutter">
+              <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                <div class="blog-tags d-flex flex-wrap">
+                  <strong class="mr-20 color-heading">Tags</strong>
+                  <ul class="list-unstyled d-flex flex-wrap mb-0">
+                    {% for tag in blog_post.tags.all %}
+                      <li><a href="#">{{ tag.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div><!-- /.blog-tags -->
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="blog-share d-flex flex-wrap justify-content-end">
+                  <strong class="mr-20 color-heading">Share</strong>
+                  <ul class="list-unstyled social-icons social-icons-primary d-flex mb-0">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                  </ul>
+                </div><!-- /.blog-share -->
+              </div>
+            </div>
+          </div>
+                <!-- Widget Navigation -->
+            <div class="widget-nav d-flex justify-content-between mb-40">
+     
+                <!-- Previous Post -->
+            {% if previous_post %}
+            <a href="{% url 'blog-detail' pk=previous_post.id %}" class="widget-nav__prev d-flex flex-wrap">
+                <div class="widget-nav__img">
+                    <div class="widget-nav__overlay"></div>
+                    <img src="{{ previous_post.cover_image.url }}" alt="blog thumb">
+                </div>
+                <div class="widget-nav__content">
+                    <span>Previous Post</span>
+                    <h5 class="widget-nav__ttile mb-0">{{ previous_post.title }}</h5>
+                </div>
+            </a><!-- /.widget-prev -->
+            {% else %}
+            <div class="widget-nav__prev d-flex flex-wrap">
+                <div class="widget-nav__img">
+                    <div class="widget-nav__overlay"></div>
+                    <img src="#" alt="blog thumb">
+                </div>
+                <div class="widget-nav__content">
+                    <span>Previous Post</span>
+                    <h5 class="widget-nav__ttile mb-0">No Previous Post</h5>
+                </div>
+            </div><!-- /.widget-prev -->
+            {% endif %}
+
+            <!-- Next Post -->
+            {% if next_post %}
+            <a href="{% url 'blog-detail' pk=next_post.id %}" class="widget-nav__next d-flex flex-wrap">
+                <div class="widget-nav__img">
+                    <div class="widget-nav__overlay"></div>
+                    <img src="{{ next_post.cover_image.url }}" alt="blog thumb">
+                </div>
+                <div class="widget-nav__content">
+                    <span>Next Post</span>
+                    <h5 class="widget-nav__ttile mb-0">{{ next_post.title }}</h5>
+                </div>
+            </a><!-- /.widget-next -->
+            {% else %}
+            <div class="widget-nav__next d-flex flex-wrap">
+                <div class="widget-nav__img">
+                    <div class="widget-nav__overlay"></div>
+                    <img src="#" alt="blog thumb">
+                </div>
+                <div class="widget-nav__content">
+                    <span>Next Post</span>
+                    <h5 class="widget-nav__ttile mb-0">No Next Post</h5>
+                </div>
+            </div><!-- /.widget-next -->
+            {% endif %}
+            </div><!-- /.widget-nav -->
+
+          <!-- Blog Author -->
+          <div class="blog-author d-flex flex-wrap mb-70">
+            <div class="blog-author__avatar">
+              <img src="assets/images/blog/author/1.jpg" alt="avatar">
+            </div><!-- /.author-avatar -->
+            <div class="blog-author__content">
+              <h6 class="blog-author__name">{{ blog_post.author.username }}</h6>
+              <!-- You should replace the following with actual author bio -->
+              <p class="blog-author__bio">Author Bio Text</p>
+              <ul class="social-icons list-unstyled mb-0">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-vimeo-v"></i></a> </li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a> </li>
+              </ul>
+            </div><!-- /.author-content -->
+          </div><!-- /.blog-author -->
+          <!-- Blog Comments -->
+          <div class="blog-comments mb-70">
+            <h5 class="blog-widget__title">{{ blog_post.comments.count }} comments</h5>
+            <ul class="comments-list list-unstyled">
+              {% for comment in blog_post.comments.all %}
+                <li class="comment__item">
+                  <div class="comment__avatar">
+                    <!-- You should replace the following with actual commenter avatar -->
+                    <img src="assets/images/blog/author/2.jpg" alt="avatar">
+                  </div>
+                  <div class="comment__content">
+                    <h5 class="comment__author">{{ comment.author.username }}</h5>
+                    <span class="comment__date">{{ comment.created_at|date:"M d, Y - H:i a" }}</span>
+                    <p class="comment__desc">{{ comment.content }}</p>
+                    <a class="comment__reply" href="#">reply</a>
+                  </div>
+                </li><!-- /.comment -->
+              {% endfor %}
+            </ul><!-- /.comments-list -->
+          </div><!-- /.blog-comments -->
+          <!-- Blog Comments Form -->
+          <div class="blog-widget blog-comments-form mb-30">
+            <h5 class="blog-widget__title">Leave A Reply</h5>
+            {% comment %} <form method="post" action="{% url 'comment-create' blog_id=blog.pk %}">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Name:">
+                  </div><!-- /.form-group -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email:">
+                  </div><!-- /.form-group -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <input type="text" name="website" class="form-control" placeholder="Website:">
+                  </div><!-- /.form-group -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea name="comment" class="form-control" placeholder="Comment"></textarea>
+                  </div><!-- /.form-group -->
+                </div><!-- /.col-lg-12 -->
+                <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap align-items-center">
+                  <button type="submit" class="btn btn__primary btn__icon justify-content-between btn__xl">
+                    <span>Submit Comment</span><i class="icon-arrow-right"></i>
+                  </button>
+                </div><!-- /.col-lg-12 -->
+              </div><!-- /.row -->
+            </form> {% endcomment %}
+          </div><!-- /.blog-comments-form -->
+        </div><!-- /.col-lg-8 -->
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <aside class="sidebar">
+            {% comment %} <div class="widget widget-search">
+              <h5 class="widget__title">Search</h5>
+              <div class="widget__content">
+                <form class="widget__form-search">
+                  <input type="text" class="form-control" placeholder="Search...">
+                  <button class="btn" type="submit"><i class="icon-search"></i></button>
+                </form>
+              </div><!-- /.widget-content -->
+            </div><!-- /.widget-search --> {% endcomment %}
+         
+            <div class="widget widget-posts">
+              <h5 class="widget__title">Recent Posts</h5>
+              <div class="widget__content">
+                {% for post in recent_posts %}
+                <!-- post item -->
+                <div class="widget-post-item d-flex align-items-center">
+                  <div class="widget-post__img">
+                    <a href="#"><img src="{{ post.cover_image.url }}" alt="thumb"></a>
+                  </div><!-- /.widget-post-img -->
+                  <div class="widget-post__content">
+                    <span class="widget-post__date">{{ post.created_at|date:"M d, Y" }}</span>
+                    <h4 class="widget-post__title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
+                  </div><!-- /.widget-post-content -->
+                </div><!-- /.widget-post-item -->
+                {% endfor %}
+              </div><!-- /.widget-content -->
+            </div><!-- /.widget-posts -->
+            
+            <div class="widget widget-categories">
+              <h5 class="widget__title">Categories</h5>
+              <div class="widget-content">
+                <ul class="list-unstyled mb-0">
+                  {% for category in categories %}
+                  <li><a href="#"><span>{{ category.name }}</span><span class="cat-count">{{ category.post_count }}</span></a></li>
+                  {% endfor %}
+                </ul>
+              </div><!-- /.widget-content -->
+            </div><!-- /.widget-categories -->
+            
+
+            <div class="widget widget-tags">
+              <h5 class="widget__title">Tags</h5>
+              <div class="widget-content">
+                <ul class="list-unstyled mb-0">
+                  {% for tag in blog_post.tags.all %}
+                  <li><a href="#">{{ tag.name }}</a></li>
+                  {% endfor %}
+                </ul>
+              </div><!-- /.widget-content -->
+            </div><!-- /.widget-tags -->
+          </aside><!-- /.sidebar -->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.blog Single -->
+  
+{% endblock content %}
