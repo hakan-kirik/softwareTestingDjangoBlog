@@ -3,128 +3,81 @@
     =========================== -->
     {% load static %}
 
-  <header class="{% if is_blog_page and request.path != '/blogs/' %}header header-light header-full{% else %}header header-transparent header-full{% endif %} "> 
-        <nav class="{% if is_blog_page and request.path != '/blogs/' %}navbar navbar-expand-lg sticky-navbar{% else %}navbar navbar-expand-lg sticky-navbar{% endif %} ">
+    <header class="{% if is_blog_page and request.path != '/blogs/' %}header header-light header-full{% else %}header header-transparent header-full{% endif %} "> 
+      <nav class="{% if is_blog_page and request.path != '/blogs/' %}navbar navbar-expand-lg sticky-navbar{% else %}navbar navbar-expand-lg sticky-navbar{% endif %} ">
           <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="{% static '/images/logo/logo-light.png' %}" class="logo-light" alt="logo1">
-              <img src="{% static '/images/logo/logo-dark.png' %}" class="logo-dark" alt="logo2">
-
-            </a>
-            <button class="navbar-toggler" type="button">
-              <span class="menu-lines"><span></span></span>
-            </button>
-            <div class="header__top-right">
-              <ul class="list-unstyled d-flex justify-content-end align-items-center mb-0">
-                <li>
-                  <div class="dropdown lang-dropdown">
-                    <button class="dropdown-toggle lang-dropdown-toggle" id="langDropdown" data-toggle="dropdown">
-                      <i class="icon-map"></i><span>Türkçe</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="langDropdown">
-                      <a class="dropdown-item" href="#">Türkçe</a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
-                    {% comment %} <li class="d-none d-xl-block">
-                      <a href="request-quote.html" class="btn action__btn-contact">Request A Quote</a>
-                    </li> {% endcomment %}
-                    <li>
-                      <button class="action__btn action__btn-login open-login-popup">
-                        <i class="icon-user"></i><span>Login</span>
-                      </button>
-                    </li>
-                  </ul><!-- /.navbar-actions -->
-                </li>
-              </ul>
-            </div><!-- /.header-top-right -->
-            <div class="collapse navbar-collapse" id="mainNavigation">
-              <ul class="navbar-nav ml-auto">
-             
-                <li class="nav__item">
-                  <a href="{% url 'home' %}"  class="nav__item-link">Home</a>
-                </li><!-- /.nav-item -->
-
-                <li class="nav__item has-dropdown">
-                  <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
-                  <ul class="dropdown-menu wide-dropdown-menu">
-                    <li class="nav__item">
-                      <div class="row mx-0">
-                        <div class="col-sm-6 dropdown-menu-col">
-                          <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a>
-                          <ul class="nav flex-column">
-                            <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                                Management</a>
-                            </li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cyber
-                                Security</a>
-                            </li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cloud
-                                Computing</a>
-                            </li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                                Consulting</a>
-                            </li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Software
-                                Dev</a>
-                            </li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT Support</a>
-                            </li>
-                            <!-- /.nav-item -->
-                          </ul>
-                        </div><!-- /.col-sm-6 -->
-                        <div class="col-sm-6 dropdown-menu-col">
-                          <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a>
-                          <ul class="nav flex-column">
-                            <li class="nav__item"><a class="nav__item-link"
-                                href="industries-single-industry.html">Education,
-                                Non-Profit</a></li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link"
-                                href="industries-single-industry.html">Accounting,
-                                Finance</a></li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link"
-                                href="industries-single-industry.html">Government &
-                                Public</a></li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Energy
-                                &
-                                Utilities</a></li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Legal,
-                                Law
-                                Firms</a></li> <!-- /.nav-item -->
-                            <li class="nav__item"><a class="nav__item-link"
-                                href="industries-single-industry.html">Manufacturing</a>
-                            </li>
-                            <!-- /.nav-item -->
-                          </ul>
-                        </div><!-- /.col-sm-6 -->
-                      </div><!-- /.row -->
-                    </li><!-- /.nav-item -->
-                  </ul><!-- /.dropdown-menu -->
-                </li><!-- /.nav-item -->
-                <li class="nav__item has-dropdown">
-                  <a href="{% url 'blogs' %}"  class="dropdown-toggle nav__item-link {% if is_blog_page %}active{% endif %}">Blog</a>
-                  <ul class="dropdown-menu">
-                      {% for post in latest_blog_posts %}
-                          <li  class="nav__item" >
-                      
-                            <a class="nav__item-link {% if post.get_absolute_url == request.path %}active{% endif %}" href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-                          </li>
-                      {% endfor %}
-                  </ul><!-- /.dropdown-menu -->
-                </li><!-- /.nav-item -->
-            
-              
-              </ul><!-- /.navbar-nav -->
-              <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
-            </div><!-- /.navbar-collapse -->
-            {% comment %} <div class="d-flex align-items-center">
-              <a href="#" class="action__btn action__btn-search ml-30"><i class="icon-search"></i></a>
-            </div> {% endcomment %}
+              <a class="navbar-brand" href="{% url 'home'%}">
+                  <img src="{% static '/images/logo/hako.svg' %}" class="logo-light" alt="logo1">
+                  <img src="{% static '/images/logo/hako.svg' %}" class="logo-dark" alt="logo2">
+              </a>
+              <button class="navbar-toggler" type="button">
+                  <span class="menu-lines"><span></span></span>
+              </button>
+              <div class="header__top-right">
+                  <ul class="list-unstyled d-flex justify-content-end align-items-center mb-0">
+                      <li>
+                          <div class="dropdown lang-dropdown">
+                              <button class="dropdown-toggle lang-dropdown-toggle" id="langDropdown" data-toggle="dropdown">
+                                  <i class="icon-map"></i><span>Türkçe</span>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="langDropdown">
+                                  <a class="dropdown-item" href="#">Türkçe</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
+                              {% if request.user.is_authenticated %}
+                                  <div class="dropdown lang-dropdown">
+                                      <button class="dropdown-toggle lang-dropdown-toggle" id="langDropdown" data-toggle="dropdown">
+                                          <i class="icon-user "  ></i><span>{{ request.user.username }}</span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="langDropdown">
+                                          <a class="dropdown-item" href="/admin">Admin Paneline Git</a>
+                                          <a class="dropdown-item" href="{% url 'logout' %}">Çıkış Yap</a>
+                                      </div>
+                                  </div>
+                              {% else %}
+                                  <button class="action__btn action__btn-login open-login-popup">
+                                      <i class="icon-user"></i><span>Giriş Yap</span>
+                                  </button>
+                              {% endif %}
+                          </ul><!-- /.navbar-actions -->
+                      </li>
+                  </ul>
+              </div><!-- /.header-top-right -->
+              <div class="collapse navbar-collapse" id="mainNavigation">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav__item">
+                          <a href="{% url 'home' %}"  class="nav__item-link">Ana Sayfa</a>
+                      </li><!-- /.nav-item -->
+                      <li class="nav__item has-dropdown">
+                          <a href="{% url 'industries' %}" class="dropdown-toggle nav__item-link {% if is_industry_page %}active{% endif %}">IT Çözümleri</a>
+                          <ul class="dropdown-menu ">
+                              {% for post in latest_industry %}
+                                  <li  class="nav__item" >
+                                      <a class="nav__item-link {% if post.get_absolute_url == request.path %}active{% endif %}" href="{{ post.get_absolute_url }}">{{ post.name }}</a>
+                                  </li>
+                              {% endfor %}
+                          </ul><!-- /.dropdown-menu -->
+                      </li><!-- /.nav-item -->
+                      <li class="nav__item has-dropdown">
+                          <a href="{% url 'blogs' %}"  class="dropdown-toggle nav__item-link {% if is_blog_page %}active{% endif %}">Blog</a>
+                          <ul class="dropdown-menu">
+                              {% for post in latest_blog_posts %}
+                                  <li  class="nav__item" >
+                                      <a class="nav__item-link {% if post.get_absolute_url == request.path %}active{% endif %}" href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                                  </li>
+                              {% endfor %}
+                          </ul><!-- /.dropdown-menu -->
+                      </li><!-- /.nav-item -->
+                  </ul><!-- /.navbar-nav -->
+                  <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
+              </div><!-- /.navbar-collapse -->
           </div><!-- /.container -->
-        </nav><!-- /.navabr -->
-      </header><!-- /.Header -->
+      </nav><!-- /.navabr -->
+  </header><!-- /.Header -->
+  
 
 
 

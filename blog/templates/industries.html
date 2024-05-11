@@ -1,0 +1,180 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block pagetitle %}
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title page-title-layout7 bg-overlay bg-overlay-gradient bg-parallax">
+        <div class="bg-img"><img src="{% static 'images/page-titles/10.jpg' %}" alt="arkaplan"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+              <span class="pagetitle__subheading">İşinizi Güvende Tutun ve Yüksek Erişilebilirlik Sağlayın.</span>
+              <h1 class="pagetitle__heading mb-30">Yükselen Teknoloji Üzerine Danışmanlık Yaklaşımı!</h1>
+              <div class="d-flex align-items-center">
+             
+                {% comment %} <a class="video__btn video__btn-white popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+                  <div class="video__player">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </a> {% endcomment %}
+              </div>
+            </div><!-- /.col-xl-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </section><!-- /.page-title -->
+      
+{% endblock  %}
+
+
+{% block content %}
+<section class="services-layout2 pb-0">
+    <div class="container">
+      <div class="row">
+        {% for industry in industries_list %}
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="service-item">
+            <div class="service__img">
+              <img src="{{ industry.image.url }}" alt="{{ industry.name }}" loading="lazy">
+            </div><!-- /.service__img -->
+            <div class="service__content">
+              <h4 class="service__title">{{ industry.name }}</h4>
+              <p class="service__desc">{{ industry.content }}</p>
+              <a href="{% url 'industry' industry.pk %}" class="btn btn__primary">
+                <span>Daha Fazla Oku</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div><!-- /.service-content -->
+          </div><!-- /.service-item -->
+        </div><!-- /.col-lg-4 -->
+        {% endfor %}
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.Services Layout 2 -->
+  
+  <!-- Sayfalama -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+        <nav aria-label="Page navigation" class='pagination-area'>
+          <ul class="pagination justify-content-center">
+            {% if industries_list.has_previous %}
+            <li><a href="?page=1">&laquo;</a></li>
+            <li><a href="?page={{ industries_list.previous_page_number }}">{{ industries_list.previous_page_number }}</a></li>
+            {% endif %}
+
+            <li class="active"><a href="?page={{ industries_list.number }}">{{ industries_list.number }}</a></li>
+            {% if industries_list.has_next %}
+            <li><a href="?page={{ industries_list.next_page_number }}">{{ industries_list.next_page_number }}</a></li>
+            <li><a href="?page={{ industries_list.paginator.num_pages }}">&raquo;</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+  <section class="testimonials testimonials-layout2 testimonials-has-top-img pb-70">
+    <div class="bg-img"><img src="{% static 'images/backgrounds/5.png' %}" alt="arkaplan"></div>
+    <img src="{% static 'images/testimonials/testimonials-group.png' %}" alt="testimonials" class="testimonials-top-img">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-2">
+          <div class="heading mb-60">
+            <h2 class="heading__subtitle">Dünyanın En İyi Kuruluşları Tarafından Güvenilen</h2>
+            <h3 class="heading__title">Dünya Genelinde 1900 Kaynak ve 870 Memnun Kullanıcı!</h3>
+          </div><!-- /.heading -->
+        </div><!-- /.col-xl-6 -->
+        <div class="col-12">
+          <div class="slick-carousel"
+            data-slick='{"slidesToShow": 3,"slidesToScroll": 3, "arrows": false, "dots": true, "autoplay": false, "infinite": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
+            <!-- Yorum öğesi #1 -->
+            <div class="testimonial-item">
+              <div class="testimonial__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="testimonial__title">Eğer tatmin edici bir kariyer arıyorsanız ve etki yaratma şansını, doğru yere geldiniz. İşletmeleri Mükemmelleştiriyoruz.</h3>
+              <div class="testimonial__meta d-flex align-items-center">
+                <div class="testimonial__thmb mr-20">
+                  <img src="{% static 'images/testimonials/thumbs/1.png' %}" alt="yazar küçük resmi">
+                </div><!-- /.testimonial-thumb -->
+                <div>
+                  <h4 class="testimonial__meta-title">John Peter</h4>
+                  <p class="testimonial__meta-desc">7oroof Inc</p>
+                </div>
+              </div><!-- /.testimonial-meta -->
+            </div><!-- /. testimonial-item -->
+            <!-- Yorum öğesi #2 -->
+            <div class="testimonial-item">
+              <div class="testimonial__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="testimonial__title">Projem basit ve küçük bir görevdi, ama kararlılık ve azim onu mutlu eden harika bir projeye dönüştürdü.</h3>
+              <div class="testimonial__meta d-flex align-items-center">
+                <div class="testimonial__thmb mr-20">
+                  <img src="{% static 'images/testimonials/thumbs/2.png' %}" alt="yazar küçük resmi">
+                </div><!-- /.testimonial-thumb -->
+                <div>
+                  <h4 class="testimonial__meta-title">Ahmed Abdallah</h4>
+                  <p class="testimonial__meta-desc">Web Inc</p>
+                </div>
+              </div><!-- /.testimonial-meta -->
+            </div><!-- /. testimonial-item -->
+            <!-- Yorum öğesi #3 -->
+            <div class="testimonial-item">
+              <div class="testimonial__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="testimonial__title">Eğer tatmin edici bir kariyer arıyorsanız ve etki yaratma şansını, doğru yere geldiniz. İşletmeleri Mükemmelleştiriyoruz.</h3>
+              <div class="testimonial__meta d-flex align-items-center">
+                <div class="testimonial__thmb mr-20">
+                  <img src="{% static 'images/testimonials/thumbs/3.png' %}" alt="yazar küçük resmi">
+                </div><!-- /.testimonial-thumb -->
+                <div>
+                  <h4 class="testimonial__meta-title">John Peter</h4>
+                  <p class="testimonial__meta-desc">7oroof Inc</p>
+                </div>
+              </div><!-- /.testimonial-meta -->
+            </div><!-- /. testimonial-item -->
+            <!-- Yorum öğesi #4 -->
+            <div class="testimonial-item">
+              <div class="testimonial__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="testimonial__title">Projem basit ve küçük bir görevdi, ama kararlılık ve azim onu mutlu eden harika bir projeye dönüştürdü.</h3>
+              <div class="testimonial__meta d-flex align-items-center">
+                <div class="testimonial__thmb mr-20">
+                  <img src="{% static 'images/testimonials/thumbs/4.png' %}" alt="yazar küçük resmi">
+                </div><!-- /.testimonial-thumb -->
+                <div>
+                  <h4 class="testimonial__meta-title">Martin Hope</h4>
+                  <p class="testimonial__meta-desc">Promina</p>
+                </div>
+              </div><!-- /.testimonial-meta -->
+            </div><!-- /. testimonial-item -->
+          </div>
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.testimonials 2 -->
+  
+
+
+{% endblock content %}

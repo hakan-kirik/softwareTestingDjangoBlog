@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'blog.apps.BlogConfig'
 ]
 
 MIDDLEWARE = [
@@ -66,6 +66,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'blog.context_processors.latest_blog_posts',
                 'blog.context_processors.is_blog_page',
+                'blog.context_processors.latest_industry',
+
+                
             ],
         },
     },
@@ -141,3 +144,5 @@ SUPERUSER_FIELD_NAME = 'is_superuser'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGOUT_REDIRECT_URL = '/'

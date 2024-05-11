@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-
+{% load static %}
 
 {% block pagetitle %}
 
@@ -19,7 +19,8 @@
                   önemseyen gerçek ortaklarız.</p>
                 <div class="d-flex flex-wrap align-items-center">
                  
-                  <a href="it-cozumleri.html" class="btn btn__white">Hizmetlerimiz</a>
+                  <a href="{% url 'industries' %}" class="btn btn__white">Hizmetlerimiz</a>
+                  
                 </div>
               </div><!-- /.slide-content -->
             </div><!-- /.col-xl-7 -->
@@ -55,7 +56,7 @@
                         <h2 class="slide__title">Geleceğe Hazır Olun, Dijital Dönüşüm Yolculuğunda Size Rehberlik Ediyoruz</h2>
                         <p class="slide__desc">Değişen iş dünyasında, güçlü bir dijital varlık oluşturmak ve rekabet avantajı sağlamak için size yardımcı oluyoruz. Deneyimli ekibimizle birlikte, işletmenizin dijital potansiyelini açığa çıkarıyoruz ve başarınızı maksimize etmek için size özel çözümler sunuyoruz.</p>
                         <div class="d-flex flex-wrap align-items-center">
-                            <a href="dijital-donusum.html" class="btn btn__white">Hizmetlerimizi Keşfedin</a>
+                            <a href="{% url 'industries' %}"class="btn btn__white">Hizmetlerimizi Keşfedin</a>
                         </div>
                     </div><!-- /.slide-content -->
                 </div><!-- /.col-xl-7 -->
@@ -111,7 +112,7 @@
               <p class="font-weight-bold mb-30">Dünyanın en büyük IT Hizmet Sağlayıcılarından biri olarak, 130'dan fazla sertifikalı mühendis ve IT destek personelimiz yardıma hazır.</p>
               <p>Kullanıcılara, deneyimli profesyonellerimizle istekler, problemler, değişiklikler, sözleşmeler, varlıklar, çözümler ve raporlar üzerinde uygun görünüm ve erişim izinlerini sağlayın.</p>
             </div>
-            <a href="#" class="btn btn__primary btn__icon mt-30">
+            <a href="{% url 'industries' %}" class="btn btn__primary btn__icon mt-30">
               <span>Hizmetlerimize Göz Atın</span><i class="icon-arrow-right"></i>
             </a>
             <ul class="list-items list-items-layout2 list-unstyled mb-0 mt-60">
@@ -125,217 +126,95 @@
     </div><!-- /.container -->
   </section><!-- /.About Layout 2 -->
   
-<!-- /.Services Layout 1 -->
   <section class="services-layout1 services-carousel pb-100">
     <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="arkaplanlar"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-          <div class="heading text-center mb-50">
-            <h2 class="heading__subtitle text-white " >Ülke Genelinde Hizmet, Yerel Uzmanlık</h2>
-            <h3 class="heading__title text-white">Müşterilerimize En Son Yazılım ve Çözümleri Sunuyoruz! </h3>
-          </div><!-- /.heading -->
-        </div><!-- /.col-lg-6 -->
-      </div><!-- /.row -->
-      <div class="row">
-        <div class="col-12">
-          <div class="slick-carousel"
-            data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-            <!-- hizmet öğesi #1 -->
-            <div class="service-item">
-              <div class="service__icon">
-                <i class="icon-server"></i>
-              </div><!-- /.service__icon -->
-              <h4 class="service__title">IT Yönetimi <br> Hizmetleri</h4>
-              <div class="service__content">
-                <p class="service__desc">Kuruluşun ağı ve işlemlerinden sorumlu olan, veri iletişimini de içeren IT yönetimi hizmeti.
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                <div class="heading text-center mb-50">
+                    <h2 class="heading__subtitle text-white">Ülke Genelinde Hizmet, Yerel Uzmanlık</h2>
+                    <h3 class="heading__title text-white">Müşterilerimize En Son Yazılım ve Çözümleri Sunuyoruz! </h3>
+                </div><!-- /.heading -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="col-12">
+                <div class="slick-carousel"
+                    data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
+                    {% for industry in industries %}
+                    <div class="service-item">
+                        <div class="service__icon">
+                       
+                          
+                            <i class=" fas {{ industry.icon_class }}"></i>
+                        </div><!-- /.service__icon -->
+                        <h4 class="service__title">{{ industry.name }}</h4>
+                        <div class="service__content">
+                            <p class="service__desc">{{ industry.content }}</p>
+                            <a href="{% url 'industry' industry.pk %}"  class="btn btn__primary">
+                                <span>Daha Fazla Oku</span>
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </div><!-- /.service-content -->
+                    </div><!-- /.service-item -->
+                    {% endfor %}
+                </div><!-- /.carousel -->
+            </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text__link mt-20 mb-0">Müşterilerimizin güvenini kazanmak için çalışıyoruz.
+                    <a href="{% url 'industries' %}" class="btn btn__primary btn__link mx-1">
+                        <span>Tüm Hizmetleri Keşfet</span> <i class="icon-arrow-right icon-outlined"></i>
+                    </a>
                 </p>
-                <a href="it-cozumleri-tekli.html" class="btn btn__primary">
-                  <span>Daha Fazla Oku</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service-content -->
-            </div><!-- /.service-item -->
-            <!-- hizmet öğesi #2 -->
-            <div class="service-item">
-              <div class="service__icon">
-                <i class="icon-cloud"></i>
-              </div><!-- /.service__icon -->
-              <h4 class="service__title">Siber Güvenlik<br> Hizmetleri</h4>
-              <div class="service__content">
-                <p class="service__desc">Küresel bir siber güvenlik lideri ile işletmenizi yönlendirin ve riskleri yönetin, uzman liderlerle ekibinizi genişletin.</p>
-                <a href="it-cozumleri-tekli.html" class="btn btn__primary">
-                  <span>Daha Fazla Oku</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service-content -->
-            </div><!-- /.service-item -->
-            <!-- hizmet öğesi #3 -->
-            <div class="service-item">
-              <div class="service__icon">
-                <i class="icon-hosting"></i>
-              </div><!-- /.service__icon -->
-              <h4 class="service__title">Bulut Bilişim<br> Hizmetleri</h4>
-              <div class="service__content">
-                <p class="service__desc">Bulut bilişim, doğrudan aktif yönetim olmadan bilgisayar sistem kaynaklarının, özellikle veri depolama ve hesaplama gücünün isteğe bağlı olarak kullanılabilir olmasıdır.
-                </p>
-                <a href="it-cozumleri-tekli.html" class="btn btn__primary">
-                  <span>Daha Fazla Oku</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service-content -->
-            </div><!-- /.service-item -->
-            <!-- hizmet öğesi #4 -->
-            <div class="service-item">
-              <div class="service__icon">
-                <i class="icon-technician"></i>
-              </div><!-- /.service__icon -->
-              <h4 class="service__title">IT Danışmanlık <br> Hizmetleri</h4>
-              <div class="service__content">
-                <p class="service__desc">Tüm IT zorluklarınızı içeriden çözmeye çalışmak maliyetli ve büyük bir dikkat dağıtıcı haline gelebilir, bizi gibi bilgili IT danışmanlık firmalarından yararlanmak işletmenize yardımcı olur.</p>
-                <a href="it-cozumleri-tekli.html" class="btn btn__primary">
-                  <span>Daha Fazla Oku</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service-content -->
-            </div><!-- /.service-item -->
-            <!-- hizmet öğesi #5 -->
-            <div class="service-item">
-              <div class="service__icon">
-                <i class="icon-programming"></i>
-              </div><!-- /.service__icon -->
-              <h4 class="service__title">Yazılım Geliştirme<br> Hizmetleri</h4>
-              <div class="service__content">
-                <p class="service__desc">Daha kısa ürün döngüleri, hızlı inovasyon ve birleşmeler, sürekli değişime katkıda bulunurken, her gün misyonunuzu ilerletmek için iş kararları almak zorunda kalırsınız.
-                </p>
-                <a href="it-cozumleri-tekli.html" class="btn btn__primary">
-                  <span>Daha Fazla Oku</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service-content -->
-            </div><!-- /.service-item -->
-            <!-- hizmet öğesi #6 -->
-            <div class="service-item">
-              <div class="service__icon">
-                <i class="icon-programming"></i>
-              </div><!-- /.service__icon -->
-              <h4 class="service__title">Yedekleme ve Kurtarma<br> Hizmetleri</h4>
-              <div class="service__content">
-                <p class="service__desc">Beklenmeyen olayları öngöremeyebilirsiniz, ancak doğru önlemlerin alınması için gereken tedbirleri alarak süreçlerinizin aksamasını minimize ederiz ve sizi doğru yönde ilerletmeye devam ederiz.</p>
-                <a href="it-cozumleri-tekli.html" class="btn btn__primary">
-                  <span>Daha Fazla Oku</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service-content -->
-            </div><!-- /.service-item -->
-          </div><!-- /.carousel -->
-        </div><!-- /.col-12 -->
-      </div><!-- /.row -->
-      <div class="row">
-        <div class="col-12 text-center">
-          <p class="text__link mt-20 mb-0">Müşterilerimizin güvenini kazanmak için çalışıyoruz.
-            <a href="endustri.html" class="btn btn__primary btn__link mx-1">
-              <span>Tüm Hizmetleri Keşfet</span> <i class="icon-arrow-right icon-outlined"></i>
-            </a>
-          </p>
-        </div><!-- /.col-lg-6 -->
-      </div>
+            </div><!-- /.col-lg-6 -->
+        </div>
     </div><!-- /.container -->
-  </section><!-- /.Services Layout 1 -->
-  
+</section><!-- /.Services Layout 1 -->
+
+
 
 <section class="blog-grid pb-50">
-    <div class="bg-img"><img src="assets/images/backgrounds/5.png" alt="arkaplanlar"></div>
+  <div class="bg-img"><img src="{% static '/images/backgrounds/5.png' %}" alt="arkaplanlar"></div>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-        <div class="heading text-center mb-40">
-          <h2 class="heading__subtitle">Kaynak Kütüphanesi</h2>
-          <h3 class="heading__title">Son Yazılar</h3>
-        </div><!-- /.heading -->
-      </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
-    <div class="row">
-      <!-- Blog Öğesi #1 -->
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="post-item">
-          <div class="post__img">
-            <a href="blog-tekli-yazi.html">
-              <img src="assets/images/blog/grid/1.jpg" alt="blog görseli">
-            </a>
-          </div><!-- /.blog-img -->
-          <div class="post__body">
-            <div class="post__meta-cat">
-              <a href="#">Danışmanlık</a><a href="#">Satış</a>
-            </div><!-- /.blog-meta-cat -->
-            <h4 class="post__title"><a href="#">Dünya Standartlarında Bir Satış Operasyonu
-                Fonksiyonu Geliştirmenin Beş Yolu</a>
-            </h4>
-            <div class="post__meta">
-              <span class="post__meta-date">30 Ocak 2020</span>
-            </div>
-            <p class="post__desc">IT altyapısının dış kaynak kullanımı uzun bir süredir var olan bir kavramdır. Teknisyenler ve mühendisler, iş istasyonları ve sunucular ile karakterize edilen, dış kaynak kullanımı fikri...
-            </p>
-            <a href="blog-tekli-yazi.html" class="btn btn__secondary btn__link">
-              <span>Daha Fazla Oku</span>
-              <i class="icon-arrow-right"></i>
-            </a>
-          </div><!-- /.blog-content -->
-        </div><!-- /.post-item -->
-      </div><!-- /.col-lg-4 -->
-      <!-- Blog Öğesi #2 -->
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="post-item">
-          <div class="post__img">
-            <a href="blog-tekli-yazi.html">
-              <img src="assets/images/blog/grid/2.jpg" alt="blog görseli">
-            </a>
-          </div><!-- /.blog-img -->
-          <div class="post__body">
-            <div class="post__meta-cat">
-              <a href="#">Teknoloji</a><a href="#">İletişim</a>
-            </div><!-- /.blog-meta-cat -->
-            <h4 class="post__title"><a href="#">Liderlik Stratejinizi Tehdit Eden Devir Riskleri</a>
-            </h4>
-            <div class="post__meta">
-              <span class="post__meta-date">30 Ocak 2020</span>
-            </div>
-            <p class="post__desc">Bugünün organizasyonları, iş sonuçlarını yönlendirmek ve artık daha fazla şeffaflık ve sorumluluk talep eden çalışanlar, müşteriler ve yatırımcıları memnun etmek için kaliteli liderlerden oluşan bir kadroya ihtiyaç duyar...
-            </p>
-            <a href="blog-tekli-yazi.html" class="btn btn__secondary btn__link">
-              <span>Daha Fazla Oku</span>
-              <i class="icon-arrow-right"></i>
-            </a>
-          </div><!-- /.blog-content -->
-        </div><!-- /.post-item -->
-      </div><!-- /.col-lg-4 -->
-      <!-- Blog Öğesi #3 -->
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="post-item">
-          <div class="post__img">
-            <a href="blog-tekli-yazi.html">
-              <img src="assets/images/blog/grid/3.jpg" alt="blog görseli">
-            </a>
-          </div><!-- /.blog-img -->
-          <div class="post__body">
-            <div class="post__meta-cat">
-              <a href="#">Dijital İş</a><a href="#">Bulut</a>
-            </div><!-- /.blog-meta-cat -->
-            <h4 class="post__title"><a href="#">Çalışan Bağlılığı Anketleri İş Gücünüz Hakkında Size Ne Söyler?</a>
-            </h4>
-            <div class="post__meta">
-              <span class="post__meta-date">30 Ocak 2020</span>
-            </div>
-            <p class="post__desc">IT altyapısının dış kaynak kullanımı uzun bir süredir var olan bir kavramdır. Teknisyenler ve mühendisler, iş istasyonları ve sunucular ile karakterize edilen, dış kaynak kullanımı fikri...
-            </p>
-            <a href="blog-tekli-yazi.html" class="btn btn__secondary btn__link">
-              <span>Daha Fazla Oku</span>
-              <i class="icon-arrow-right"></i>
-            </a>
-          </div><!-- /.blog-content -->
-        </div><!-- /.post-item -->
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+              <div class="heading text-center mb-40">
+                  <h2 class="heading__subtitle">Kaynak Kütüphanesi</h2>
+                  <h3 class="heading__title">Son Yazılar</h3>
+              </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+      <div class="row">
+          {% for post in latest_posts %}
+          <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="post-item" id={{post.pk}}>
+                  <div class="post__img">
+                      <a href="{{ post.get_absolute_url }}">
+                          <img src="{{ post.cover_image.url }}" alt="{{ post.title }}">
+                      </a>
+                  </div><!-- /.blog-img -->
+                  <div class="post__body" >
+                      <div class="post__meta-cat">
+                          {% for tag in post.tags.all %}
+                          <a href="#{{post.pk}}">{{ tag.name }}</a>
+                          {% endfor %}
+                      </div><!-- /.blog-meta-cat -->
+                      <h4 class="post__title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
+                      <div class="post__meta">
+                          <span class="post__meta-date">{{ post.created_at|date:"d F Y" }}</span>
+                      </div>
+                      <p class="post__desc">{{ post.content|truncatechars:150 }}</p>
+                      <a href="{{ post.get_absolute_url }}" class="btn btn__secondary btn__link">
+                          <span>Daha Fazla Oku</span>
+                          <i class="icon-arrow-right"></i>
+                      </a>
+                  </div><!-- /.blog-content -->
+              </div><!-- /.post-item -->
+          </div><!-- /.col-lg-4 -->
+          {% endfor %}
+      </div><!-- /.row -->
   </div><!-- /.container -->
 </section><!-- /.blog Grid -->
 

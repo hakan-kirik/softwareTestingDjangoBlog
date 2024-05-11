@@ -6,16 +6,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="DataSoft  IT Solutions &  Services Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>DataSoft IT Solutions  Services Template</title>
+  <meta name="description" content="KIRIKsoft  IT Çözümleri">
+  <link href="{% static '/images/favicon/favicon.ico' %}" rel="icon">
+  <title>KIRIKsoft IT Çözümleri Ve Blogları</title>
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" href="{% static 'css/libraries.css' %}">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
 </head>
 
 <body>
@@ -24,6 +24,9 @@
       <div class="loading"><span></span><span></span><span></span><span></span></div>
     </div> 
     <!-- /.preloader -->
+
+  
+    
 
     <!-- =========================
         Header
@@ -54,74 +57,80 @@
     {% include "partials/_footer.html" %}
       <!-- /.Footer -->
     <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
-
     <div class="login-popup" id="login-popup">
       <div class="login-popup-wrapper">
-        <form class="login-popup__form">
-          <h3 class="login-popup__title">Login!</h3>
-          <p class="login-popup__desc">Connect, organize and get things done to keep your IT business safe.</p>
-          <div class="form-group mb-20">
-            <i class="icon-mail input-icon"></i>
-            <input type="text" class="form-control" placeholder="Email">
+          <form class="login-popup__form" method="post" action="{% url 'login' %}" >
+              {% csrf_token %}
+              <h3 class="login-popup__title">Giriş Yap!</h3>
+              <p class="login-popup__desc">Bağlanın, düzenleyin ve BT işletmenizi güvende tutmak için gerekenleri yapın.</p>
+              <div class="form-group mb-20">
+                  <i class="icon-mail input-icon"></i>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Kullanıcı Adı">
+              </div>
+              <div class="form-group mb-20">
+                  <i class="icon-lock input-icon"></i>
+                  <input type="password" class="form-control" id="password" placeholder="********" name="password">
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-20">
+                 
+              </div>
+              <button type="submit" class="btn btn__primary btn__block btn__xl">
+                  <span>Giriş Yap</span>
+                  <i class="icon-arrow-right"></i>
+              </button>
+          </form>
+          <div class="d-flex justify-content-center align-items-center mt-20">
+              <span class="color-white fz-14 font-weight-bold">Hesabınız Yok mu?</span>
+              <button id="go-register" class="go-register fz-14 font-weight-bold">
+                  <span>Buradan Kayıt Olun</span><i class="icon-arrow-right"></i>
+              </button>
           </div>
-          <div class="form-group mb-20">
-            <i class="icon-lock input-icon"></i>
-            <input type="password" class="form-control" placeholder="********">
-          </div>
-          <div class="d-flex align-items-center justify-content-between mb-20">
-            <div class="custom-control custom-checkbox d-flex align-items-center">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Remember Me!</label>
-            </div>
-            <a href="#" class="fz-14 font-weight-bold color-secondary">Forget Password?</a>
-          </div>
-          <button type="submit" class="btn btn__primary btn__block btn__xl">
-            <span>Login</span>
-            <i class="icon-arrow-right"></i>
-          </button>
-        </form>
-        <div class="d-flex justify-content-center align-items-center mt-20">
-          <span class="color-white fz-14 font-weight-bold">Don’t Have An Account?</span>
-          <button id="go-register" class="go-register fz-14 font-weight-bold">
-            <span>Register Here</span><i class="icon-arrow-right"></i>
-          </button>
-        </div>
       </div>
-    </div><!-- /.login-popup -->
-
-    <div class="login-popup" id="register-popup">
+  </div><!-- /.login-popup -->
+  
+  <div class="login-popup" id="register-popup">
       <div class="login-popup-wrapper">
-        <form class="login-popup__form">
-          <h3 class="login-popup__title">Register!</h3>
-          <p class="login-popup__desc">Connect, organize and get things done to keep your IT business safe.</p>
-          <div class="form-group mb-20">
-            <i class="icon-mail input-icon"></i>
-            <input type="text" class="form-control" placeholder="Email">
+          <form class="login-popup__form" id="register-form">
+              {% csrf_token %}
+              <h3 class="login-popup__title">Kayıt Ol!</h3>
+              <p class="login-popup__desc">Bağlanın, düzenleyin ve BT işletmenizi güvende tutmak için gerekenleri yapın.</p>
+              <div id="error-message" style="color: red;"></div>
+              <div class="form-group mb-20">
+                  <i class="icon-user input-icon"></i>
+                  <input type="text" class="form-control" id="username1" placeholder="Kullanıcı Adı">
+              </div>
+              <div class="form-group mb-20">
+                  <i class="icon-mail input-icon"></i>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group mb-20">
+                  <i class="icon-lock input-icon"></i>
+                  <input type="password" class="form-control" id="password1" placeholder="********">
+              </div>
+              <div class="form-group mb-20">
+                  <i class="icon-lock input-icon"></i>
+                  <input type="password" class="form-control" id="password2" placeholder="********">
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-20">
+            
+              </div>
+              <button type="submit" class="btn btn__primary btn__block btn__xl">
+                  <span>Kayıt Ol</span>
+                  <i class="icon-arrow-right"></i>
+              </button>
+  
+          </form>
+          <div class="d-flex justify-content-center align-items-center mt-20">
+              <span class="color-white fz-14 font-weight-bold">Zaten Hesabınız Var mı?</span>
+              <button id="go-login" class="go-login fz-14 font-weight-bold">
+                  <span>Buradan Giriş Yapın</span><i class="icon-arrow-right"></i>
+              </button>
           </div>
-          <div class="form-group mb-20">
-            <i class="icon-lock input-icon"></i>
-            <input type="password" class="form-control" placeholder="********">
-          </div>
-          <div class="d-flex align-items-center justify-content-between mb-20">
-            <div class="custom-control custom-checkbox d-flex align-items-center">
-              <input type="checkbox" class="custom-control-input" id="customCheck2">
-              <label class="custom-control-label" for="customCheck2">I read & agree to <a href="#">Terms &
-                  Conditions</a></label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn__primary btn__block btn__xl">
-            <span>Register</span>
-            <i class="icon-arrow-right"></i>
-          </button>
-        </form>
-        <div class="d-flex justify-content-center align-items-center mt-20">
-          <span class="color-white fz-14 font-weight-bold">Have An Account?</span>
-          <button id="go-login" class="go-login fz-14 font-weight-bold">
-            <span>Login Here</span><i class="icon-arrow-right"></i>
-          </button>
-        </div>
       </div>
-    </div><!-- /.login-popup -->
+  </div><!-- /.register-popup -->
+  
+    
+
 
     <div class="search-popup">
       <button type="button" class="search-popup__close"><i class="fas fa-times"></i></button>
@@ -139,6 +148,110 @@
     $(window).on('load', function() {
         $('#preloader').fadeOut('slow', function() {
             $(this).remove();
+        });
+    });
+    
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // Kullanıcı oturum açmışsa ve modal varsa
+      var modal = document.getElementById('login-popup');
+      var queryParams = window.location.search;      
+      if (queryParams?.includes("next=") && modal) {
+        $('#custom-toast').toast('show');
+
+     //   modal.classList.add('active'); // Modalı göstermek için 'show' sınıfını ekle
+      }
+  });
+  </script>
+
+  <script>
+  
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.login-popup__form').onsubmit = function(event) {
+          event.preventDefault(); // Formun normal gönderimini engelle
+          
+          const username = document.querySelector('#username').value;
+          const password = document.querySelector('#password').value;
+          const csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+  
+          fetch("{% url 'ajax_login' %}", {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+                  'X-CSRFToken': csrfToken
+              },
+              body: new URLSearchParams({
+                  'username': username,
+                  'password': password
+              })
+          })
+          .then(response => {
+              if (response.ok) {
+                  return response.json();
+              } else {
+                  throw new Error('Login failed');
+              }
+          })
+          .then(data => {
+              if (data.status === 'success') {
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                let next= urlParams.get('next');
+                if(next)
+                  window.location.href = window.location.pathname;
+                else
+                  window.location.href = '/admin'; // Yönlendirme
+              } else {
+                  alert('Login failed: ' + data.message);
+              }
+          })
+          .catch(error => {
+              console.error('Error during login:', error);
+              alert('There was an error while trying to login.');
+          });
+      };
+  });
+  </script>
+  <script>
+    document.getElementById("register-form").addEventListener("submit", function(event) {
+      console.log(`bak buradayim`)
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const username = document.getElementById('username1').value;
+        const password1 = document.getElementById("password1").value;
+        const password2 = document.getElementById("password2").value;
+        const csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+
+        fetch("{% url 'register' %}", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRFToken': csrfToken
+            },
+            body: new URLSearchParams({
+                'username':username,
+                'email': email,
+                'password1': password1,
+                'password2': password2
+            })
+        })
+        .then(response => {
+            if (response.ok) {
+                window.location.href = '/admin'; // Yönlendirme
+            } else {
+                return response.json();
+            }
+        })
+        .then(data => {
+            if (data.status === 'error') {
+                const errors = Object.values(data.errors).flat().join('<br>');
+                document.getElementById("error-message").innerHTML = errors;
+            }
+        })
+        .catch(error => {
+            console.error('Error during register:', error);
+            alert('There was an error while trying to register.');
         });
     });
 </script>

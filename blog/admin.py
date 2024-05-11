@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from blog.models import BlogPost, Category, CustomUser, Tag,Comment
+from blog.models import BlogPost, Category, CustomUser, Industry,  Tag,Comment
 from django.utils.safestring import mark_safe
 # Register your models here.
 
@@ -14,7 +14,7 @@ class BlogPostAdmin(admin.ModelAdmin):
     search_fields = ['title', 'author__username', 'category__name', 'tags__name']
     list_filter = ['created_at', 'category__name', 'tags__name']
     date_hierarchy = 'created_at'
-
+    required_fields = ['cover_image']
     def display_tags(self, obj):
         return ", ".join([tag.name for tag in obj.tags.all()])
 
@@ -57,6 +57,12 @@ class BlogPostAdmin(admin.ModelAdmin):
             else:
                 kwargs["queryset"] = CustomUser.objects.filter(username=request.user.username)
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
+    def get_form(self, request, obj=None, **kwargs):
+        # Alanların "required" niteliğini ayarlar
+        form = super().get_form(request, obj, **kwargs)
+        for field_name in self.required_fields:
+            form.base_fields[field_name].required = True
+        return form
 
 admin.site.register(BlogPost, BlogPostAdmin)
 
@@ -85,6 +91,47 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ['author', 'blog_post', 'created_at']
     search_fields = ['author__username', 'blog_post__title']
     list_filter = ['created_at']
+
+
+class IndustryAdmin(admin.ModelAdmin):
+
+    list_display = ['name', 'user']
+    search_fields = ['name']
+    required_fields = ['image']
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        if request.user.is_superuser:
+            return queryset
+        return queryset.filter(user=request.user)
+
+    def save_model(self, request, obj, form, change):
+        if not obj.pk:
+            obj.user = request.user
+        super().save_model(request, obj, form, change)
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == "user":
+            if request.user.is_superuser:
+                kwargs["queryset"] = CustomUser.objects.all()
+            else:
+                kwargs["queryset"] = CustomUser.objects.filter(username=request.user.username)
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
+    def get_list_filter(self, request):
+        if request.user.is_superuser:
+            return ['user']
+        return []
+    
+    def get_form(self, request, obj=None, **kwargs):
+        # Alanların "required" niteliğini ayarlar
+        form = super().get_form(request, obj, **kwargs)
+        for field_name in self.required_fields:
+            form.base_fields[field_name].required = True
+        return form
+
+
+
+admin.site.register(Industry, IndustryAdmin)
+
 
 admin.site.register(Comment, CommentAdmin)
 

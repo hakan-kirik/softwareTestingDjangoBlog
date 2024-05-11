@@ -1,22 +1,23 @@
 {% extends "layout.html" %}
 
 {% block pagetitle %}
+{% load static %}
 <section class="page-title page-title-layout14 bg-overlay bg-overlay-gradient bg-parallax text-center">
-    <div class="bg-img"><img src="assets/images/page-titles/14.jpg" alt="background"></div>
-    <div class="container">
+  <div class="bg-img"><img src="{% static '/images/page-titles/14.jpg' %}" alt="arka plan"></div>
+  <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h1 class="pagetitle__heading">Our Blog</h1>
-          <nav>
-            <ol class="breadcrumb justify-content-center mb-0 mt-80">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Blog</li>
-            </ol>
-          </nav>
-        </div><!-- /.col-lg-12 -->
+          <div class="col-12">
+              <h1 class="pagetitle__heading">Blogumuz</h1>
+              <nav>
+                  <ol class="breadcrumb justify-content-center mb-0 mt-80">
+                      <li class="breadcrumb-item"><a href="{% url 'home' %}">Ana Sayfa</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                  </ol>
+              </nav>
+          </div><!-- /.col-lg-12 -->
       </div><!-- /.row -->
-    </div><!-- /.container -->
-  </section><!-- /.page-title -->
+  </div><!-- /.container -->
+</section><!-- /.page-title -->
 
   
 {% endblock  %}

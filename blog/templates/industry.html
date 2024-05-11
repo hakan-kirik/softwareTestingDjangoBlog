@@ -1,0 +1,203 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block pagetitle %}
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title page-title-layout11 bg-overlay bg-overlay-gradient bg-parallax text-center">
+        <div class="bg-img"><img src="{% static '/images/page-titles/11.jpg'%}" alt="arkaplan"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
+                    <span class="pagetitle__subheading">Muhasebe ve Finans</span>
+                    <h1 class="pagetitle__heading mb-30">İşinizi Yönlendirin ve Küresel Bulut ve Yönetilen Güvenlik Lideri ile Riskleri Yönetin</h1>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="{% url 'industries'  %}" class="btn btn__white btn__white-style2 mx-3">
+                            <span>Diğer Hizmetlerimize Bakın</span> <i class="icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div><!-- /.col-xl-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.page-title -->
+    
+
+{% endblock  %}
+
+{% block content %}
+<section class="secondary-nav secondary-nav-internal-navigation sticky-top py-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav nav-tabs justify-content-center">
+                    <a href="#" data-scroll="overview" class="nav__link">Genel Bakış</a>
+                    <a href="#" data-scroll="awards" class="nav__link">Ödüller ve Tanıma</a>
+                    <a href="#" data-scroll="features" class="nav__link">Özellikler</a>
+                   
+                </nav>
+            </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.Secondary Nav -->
+
+<!-- ========================
+    About Layout 3
+=========================== -->
+<section id="overview" class="about-layout3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
+                <div class="heading-layout2 mb-50">
+                    <h3 class="heading__title">{{ industry.name }}</h3>
+                    <p class="heading__desc font-weight-bold mb-20">{{ industry.content|truncatechars:500 }}</p>
+                </div><!-- /.heading -->
+                <ul class="list-items list-items-layout2 list-unstyled mb-40">
+                    <li>450.000'den fazla müşteri etkileşiminde sunulmuştur</li>
+                    <li>Kritik faaliyetleri sorgulamak için uzmanlar tarafından sağlanmıştır</li>
+                    <li>Akran görüşleri ve tavsiyelerle desteklenmiştir</li>
+                </ul>
+                {% comment %} <a href="{{ industry.get_absolute_url }}" class="btn btn__primary mb-30">Detaylar</a> {% endcomment %}
+            </div><!-- /.col-xl-5 -->
+            <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
+                <div class="sticky-top">
+                    <div class="about__img">
+                        <img src="{{ industry.image.url }}" alt="{{ industry.name }}" loading="lazy">
+                    </div><!-- /.about-img -->
+                </div>
+            </div><!-- /.col-xl-5 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.About Layout 3 -->
+
+<!-- =========================
+    Awards
+    =========================== -->
+<section id="awards" class="awards">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-l-12 col-xl-6 offset-xl-3">
+                <div class="heading text-center mb-50">
+                    <h2 class="heading__subtitle">Ödüllerimiz ve Tanınmalarımız</h2>
+                    <h3 class="heading__title mb-50">Dünya'nın En İyi Kuruluşları Tarafından Güvenilen!</h3>
+                </div>
+            </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <!-- fancybox item #1 -->
+                <div class="fancybox-item">
+                    <div class="fancybox__icon__img">
+                        <img src="{% static 'images/awards/icons/1.png' %}" alt="ikon">
+                    </div><!-- /.fancybox__icon__img -->
+                    <div class="fancybox__content">
+                        <h4 class="fancybox__title">CSS Tasarım Ödülü</h4>
+                        <p class="fancybox__desc">Dijital topluluk, UI/UX uzmanları ve ilham verici web liderleri için bir
+                            web tasarım ve geliştirme ödül platformu.
+                        </p>
+                    </div><!-- /.fancybox-content -->
+                </div><!-- /.fancybox-item -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <!-- fancybox item #2 -->
+                <div class="fancybox-item">
+                    <span class="pinned-ribbon"></span>
+                    <div class="fancybox__icon__img">
+                        <img src="{% static 'images/awards/icons/2.png' %}" alt="ikon">
+                    </div><!-- /.fancybox__icon__img -->
+                    <div class="fancybox__content">
+                        <h4 class="fancybox__title">W3 Tasarım Ödülü</h4>
+                        <p class="fancybox__desc">Ödüller, olağanüstü Web Siteleri, Web Pazarlama, Video, Siteler,
+                            Uygulamalar ve Sosyal içerikleri onurlandırarak dijitali kutlar.
+                        </p>
+                    </div><!-- /.fancybox-content -->
+                </div><!-- /.fancybox-item -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <!-- fancybox item #3 -->
+                <div class="fancybox-item">
+                    <div class="fancybox__icon__img">
+                        <img src="{% static 'images/awards/icons/3.png' %}" alt="ikon">
+                    </div><!-- /.fancybox__icon__img -->
+                    <div class="fancybox__content">
+                        <h4 class="fancybox__title">The FWA Ödülü</h4>
+                        <p class="fancybox__desc">2000'den beri her gün yenilik sergileyerek, misyonumuz keskin
+                            yaratıcılığı sergilemek, regardless.
+                        </p>
+                    </div><!-- /.fancybox-content -->
+                </div><!-- /.fancybox-item -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <!-- fancybox item #4 -->
+                <div class="fancybox-item">
+                    <div class="fancybox__icon__img">
+                        <img src="{% static 'images/awards/icons/4.png' %}" alt="ikon">
+                    </div><!-- /.fancybox__icon__img -->
+                    <div class="fancybox__content">
+                        <h4 class="fancybox__title">WWW Ödülleri</h4>
+                        <p class="fancybox__desc">Dünyanın en iyi web tasarımcılarının, geliştiricilerinin ve ajanslarının
+                            yetenek ve çabalarını tanıyan ödüller.
+                        </p>
+                    </div><!-- /.fancybox-content -->
+                </div><!-- /.fancybox-item -->
+            </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text__link mb-0">Müşterilerimizin güvenini kazanmak için çalışıyoruz.
+                    <a href="{% url 'industries'  %}"  class="btn btn__secondary btn__link mx-1">
+                        <span>Hizmetler İçin Tıklayın!</span> <i class="icon-arrow-right icon-outlined"></i>
+                    </a>
+                </p>
+            </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.Awards -->
+
+<!-- ======================
+    Özellikler Düzeni 2
+========================== -->
+<section id="features" class="features-layout2 bg-overlay bg-overlay-secondary-gradient pt-130">
+    <div class="bg-img"><img src="{% static '/images/banners/4.jpg' %}" alt="arkaplan"></div>
+    <div class="container">
+        <div class="row mb-40">
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <h2 class="heading__subtitle color-primary">Hizmetlerinizin Yüksek Kullanılabilirliğini Sağlayın</h2>
+                <h3 class="heading__title color-white">Verimliliği Artırın ve Müşterilere Daha İyi Deneyim Sağlayın, Bizim BT
+                    Çözümlerimizle!
+                </h3>
+            </div><!-- /col-lg-5 -->
+            <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
+                <p class="heading__desc color-gray">Dünya'nın en iyi kuruluşları tarafından güvenilen, 15 yıldır ve
+                    sayılıyor, yüzlerce BT danışmanına, geliştiriciye, kullanıcıya ve iş sahiplerine gülücükler sunmaktadır.
+                    Yüksek kullanılabilirliği sağlamak için tüm zor BT sorunlarına kolay çözümler.</p>
+                <div class="d-flex flex-wrap mt-40 mb-30">
+    
+                </div>
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+            {% for industry in latest_industries %}
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="feature-item">
+                    <div class="feature__icon">
+                        <i class="fas  {{ industry.icon_class }}"></i>
+                    </div>
+                    <h4 class="feature__title">{{ industry.name }}</h4>
+                    <p class="feature__desc">{{ industry.content|truncatechars:80 }}</p>
+
+                    <a href="{{ industry.get_absolute_url }}" class="btn__link">
+                        <i class="icon-arrow-right icon-outlined"></i>
+                        <span>Daha Fazla Oku</span>
+                    </a>
+                </div><!-- /.feature-item -->
+            </div><!-- /.col-lg-3 -->
+            {% endfor %}
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.Features Layout 2 -->
+
+
+
+
+{% endblock content %}
