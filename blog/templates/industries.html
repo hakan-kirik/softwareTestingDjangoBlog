@@ -40,7 +40,7 @@
             </div><!-- /.service__img -->
             <div class="service__content">
               <h4 class="service__title">{{ industry.name }}</h4>
-              <p class="service__desc">{{ industry.content }}</p>
+              <p class="service__desc">{{ industry.content |truncatechars_html:150|safe }}</p>
               <a href="{% url 'industry' industry.pk %}" class="btn btn__primary">
                 <span>Daha Fazla Oku</span>
                 <i class="icon-arrow-right"></i>
@@ -104,8 +104,8 @@
                   <img src="{% static 'images/testimonials/thumbs/1.png' %}" alt="yazar küçük resmi">
                 </div><!-- /.testimonial-thumb -->
                 <div>
-                  <h4 class="testimonial__meta-title">John Peter</h4>
-                  <p class="testimonial__meta-desc">7oroof Inc</p>
+                  <h4 class="testimonial__meta-title">Esma Sugötürmez</h4>
+                  <p class="testimonial__meta-desc">WaterDeliver Inc</p>
                 </div>
               </div><!-- /.testimonial-meta -->
             </div><!-- /. testimonial-item -->
@@ -116,7 +116,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+              
               </div>
               <h3 class="testimonial__title">Projem basit ve küçük bir görevdi, ama kararlılık ve azim onu mutlu eden harika bir projeye dönüştürdü.</h3>
               <div class="testimonial__meta d-flex align-items-center">
@@ -124,7 +124,7 @@
                   <img src="{% static 'images/testimonials/thumbs/2.png' %}" alt="yazar küçük resmi">
                 </div><!-- /.testimonial-thumb -->
                 <div>
-                  <h4 class="testimonial__meta-title">Ahmed Abdallah</h4>
+                  <h4 class="testimonial__meta-title">Cansu Dağdeviren</h4>
                   <p class="testimonial__meta-desc">Web Inc</p>
                 </div>
               </div><!-- /.testimonial-meta -->
@@ -144,8 +144,8 @@
                   <img src="{% static 'images/testimonials/thumbs/3.png' %}" alt="yazar küçük resmi">
                 </div><!-- /.testimonial-thumb -->
                 <div>
-                  <h4 class="testimonial__meta-title">John Peter</h4>
-                  <p class="testimonial__meta-desc">7oroof Inc</p>
+                  <h4 class="testimonial__meta-title">Fatih Aktuel</h4>
+                  <p class="testimonial__meta-desc">PitaSoft Inc</p>
                 </div>
               </div><!-- /.testimonial-meta -->
             </div><!-- /. testimonial-item -->
@@ -164,8 +164,8 @@
                   <img src="{% static 'images/testimonials/thumbs/4.png' %}" alt="yazar küçük resmi">
                 </div><!-- /.testimonial-thumb -->
                 <div>
-                  <h4 class="testimonial__meta-title">Martin Hope</h4>
-                  <p class="testimonial__meta-desc">Promina</p>
+                  <h4 class="testimonial__meta-title">Ali Şentuna</h4>
+                  <p class="testimonial__meta-desc">Aktar</p>
                 </div>
               </div><!-- /.testimonial-meta -->
             </div><!-- /. testimonial-item -->

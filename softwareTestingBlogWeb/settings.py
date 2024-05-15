@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig'
+    'blog'
 ]
 
 MIDDLEWARE = [
@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'softwareTestingBlogWeb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
+        'NAME': 'hakodb',
         'USER':'postgres',
-        'PASSWORD':'mysecretpassword',
-        'HOST':'127.0.0.1',
-        'PORT':'5432'
+        'PASSWORD':'hako.test',
+        'HOST':'localhost',
+        'PORT':'5454'
     }
 }
 

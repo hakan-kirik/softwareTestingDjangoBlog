@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
-                    <span class="pagetitle__subheading">Muhasebe ve Finans</span>
+                    <span class="pagetitle__subheading">Yazılım ve Destek</span>
                     <h1 class="pagetitle__heading mb-30">İşinizi Yönlendirin ve Küresel Bulut ve Yönetilen Güvenlik Lideri ile Riskleri Yönetin</h1>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="{% url 'industries'  %}" class="btn btn__white btn__white-style2 mx-3">
@@ -50,7 +50,7 @@
             <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
                 <div class="heading-layout2 mb-50">
                     <h3 class="heading__title">{{ industry.name }}</h3>
-                    <p class="heading__desc font-weight-bold mb-20">{{ industry.content|truncatechars:500 }}</p>
+                    <p class="heading__desc font-weight-bold mb-20">{{ industry.content|safe}}</p>
                 </div><!-- /.heading -->
                 <ul class="list-items list-items-layout2 list-unstyled mb-40">
                     <li>450.000'den fazla müşteri etkileşiminde sunulmuştur</li>

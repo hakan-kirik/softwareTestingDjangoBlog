@@ -44,15 +44,17 @@
                   <!-- Blog Content -->
                   <div class="post__body">
                       <div class="post__meta-cat">
-                          {% for category in blog_post.category.all %}
-                          <a href="#">{{ category.name }}</a>
-                          {% endfor %}
+             
+                          {% if blog_post.category %}    
+                            <a href="#">{{ blog_post.category.name }}</a>
+                          {% endif %}
+                    
                       </div>
                       <h4 class="post__title"><a href="{% url 'blog-detail' blog_post.pk %}">{{ blog_post.title }}</a></h4>
                       <div class="post__meta">
                           <span class="post__meta-date">{{ blog_post.created_at|date:"M d, Y" }}</span>
                       </div>
-                      <p class="post__desc">{{ blog_post.content|truncatechars:200 }}</p>
+                      <div class="post__desc">{{ blog_post.content|safe|truncatechars_html:200 }}</div>
 
                       <a href="{% url 'blog-detail' blog_post.pk %}" class="btn btn__secondary btn__link">
                           <span>Daha Fazla Oku</span>

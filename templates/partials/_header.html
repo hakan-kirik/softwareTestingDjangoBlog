@@ -52,7 +52,7 @@
                           <a href="{% url 'home' %}"  class="nav__item-link">Ana Sayfa</a>
                       </li><!-- /.nav-item -->
                       <li class="nav__item has-dropdown">
-                          <a href="{% url 'industries' %}" class="dropdown-toggle nav__item-link {% if is_industry_page %}active{% endif %}">IT Çözümleri</a>
+                          <a href="{% url 'industries' %}" class="dropdown-toggle nav__item-link {% if is_industry_page %}active{% endif %}">Hizmetlerimiz</a>
                           <ul class="dropdown-menu ">
                               {% for post in latest_industry %}
                                   <li  class="nav__item" >

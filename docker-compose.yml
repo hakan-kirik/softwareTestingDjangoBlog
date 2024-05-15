@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  hakopostgre:
+    image: postgres:latest
+    restart: always
+    hostname: hakopostgre
+    ports:
+      - "5454:5432"
+    environment: 
+      POSTGRES_HOST: hakopostgre
+      POSTGRES_DB: hakodb
+      POSTGRES_PASSWORD: hako.test
+      POSTGRES_USER: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 5
+      timeout: 5s
+    networks:
+      - hako
+  django:
+    build:
+      context: ./
+    restart: always
+    ports:
+      - "4000:3000"
+    depends_on: 
+      - hakopostgre
+    links:
+    - hakopostgre:hakopostgre
+    networks:
+      - hako
+
+networks:
+  hako:
+    driver: bridge
+
+    

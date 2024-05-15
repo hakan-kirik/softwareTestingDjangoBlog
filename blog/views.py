@@ -44,7 +44,7 @@ def blog(request, pk):
     previous_post = BlogPost.objects.filter(id__lt=pk).order_by('-id').first()
     next_post = BlogPost.objects.filter(id__gt=pk).order_by('id').first()
     recent_posts = BlogPost.objects.all()[:3]  # Son 3 blog gönderisini alır
-    categories = Category.objects.annotate(post_count=Count('blogpost')).order_by('name')
+    categories = Category.objects.annotate(post_count=Count('blogpost')).order_by('-post_count')[:5]
  
     context = {
         'blog_post': blog_post,
@@ -166,7 +166,7 @@ def register(request):
         username = form.cleaned_data['username']  # Kullanıcı adını al
         password = form.cleaned_data['password1']
         # Yeni kullanıcı oluştur
-        user = CustomUser.objects.create_user(email=email, username=username, password=password)
+        user = CustomUser.objects.create_user(email=email, password=password, username=username)
         # Oturumu aç
         user = authenticate(username=username, password=password)
         login(request, user)

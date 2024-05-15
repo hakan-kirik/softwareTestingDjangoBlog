@@ -150,7 +150,7 @@
                         </div><!-- /.service__icon -->
                         <h4 class="service__title">{{ industry.name }}</h4>
                         <div class="service__content">
-                            <p class="service__desc">{{ industry.content }}</p>
+                            <p class="service__desc">{{ industry.content |truncatechars_html:150|safe }}</p>
                             <a href="{% url 'industry' industry.pk %}"  class="btn btn__primary">
                                 <span>Daha Fazla Oku</span>
                                 <i class="icon-arrow-right"></i>
@@ -181,7 +181,7 @@
       <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
               <div class="heading text-center mb-40">
-                  <h2 class="heading__subtitle">Kaynak Kütüphanesi</h2>
+                  <h2 class="heading__subtitle">KIRIKsoft Kütüphanesi</h2>
                   <h3 class="heading__title">Son Yazılar</h3>
               </div><!-- /.heading -->
           </div><!-- /.col-lg-6 -->
@@ -205,7 +205,7 @@
                       <div class="post__meta">
                           <span class="post__meta-date">{{ post.created_at|date:"d F Y" }}</span>
                       </div>
-                      <p class="post__desc">{{ post.content|truncatechars:150 }}</p>
+                      <p class="post__desc">{{ post.content|truncatechars_html:150|safe  }}</p>
                       <a href="{{ post.get_absolute_url }}" class="btn btn__secondary btn__link">
                           <span>Daha Fazla Oku</span>
                           <i class="icon-arrow-right"></i>

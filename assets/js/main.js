@@ -1,8 +1,8 @@
 /*--------------------------
-    Project Name: DataSoft
+    Project Name: KIRIKsoft
     Version: 1.0
     Author: 7oorof
-    Relase Date: February 2021
+    Relase Date: February 2024
 ---------------------------*/
 /*---------------------------
       Table of Contents
