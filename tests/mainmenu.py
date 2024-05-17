@@ -3,6 +3,7 @@ def main_menu():
     print("2- Blog Testleri Çalıştır")
     print("3- Endüstri Sayfaları Testleri Çalıştır")
     print("4- Popup ve İmaj Kontrol Testleri Çalıştır")
+    print("5- Login Testlerini Çalıştır")
     choice = input("Lütfen test numarasını giriniz: ")
     if choice == '1':
         from .testhomepage import run_tests as run_home_tests
@@ -11,11 +12,16 @@ def main_menu():
         # Blog Testlerini burada çağır
         pass
     elif choice == '3':
-        # Endüstri Sayfaları Testlerini burada çağır
-        pass
+        from .industryPage import run_tests as run_industry_test
+        run_industry_test()
     elif choice == '4':
         # Popup ve İmaj Kontrol Testlerini burada çağır
         pass
+    elif choice == '5':
+        username = input("Kullanıcı adını giriniz: ")
+        password = input("Şifreyi giriniz: ")
+        from .modalLoginTest import run_tests as run_login_tests
+        run_login_tests(username, password)
     else:
         print("Geçersiz seçim.")
 

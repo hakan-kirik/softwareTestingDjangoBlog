@@ -19,18 +19,18 @@ services:
       timeout: 5s
     networks:
       - hako
-  django:
-    build:
-      context: ./
-    restart: always
-    ports:
-      - "4000:3000"
-    depends_on: 
-      - hakopostgre
-    links:
-    - hakopostgre:hakopostgre
-    networks:
-      - hako
+  # django:
+  #   build:
+  #     context: ./
+  #   restart: always
+  #   ports:
+  #     - "4000:3000"
+  #   depends_on: 
+  #     - hakopostgre
+  #   links:
+  #   - hakopostgre:hakopostgre
+  #   networks:
+  #     - hako
 
 networks:
   hako:
