@@ -68,7 +68,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-
+media
 # Translations
 *.mo
 *.pot

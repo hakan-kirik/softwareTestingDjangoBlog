@@ -1,8 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-# Create your models here.
-
 from django.contrib.auth import get_user_model
+from django.forms import ValidationError
 from django.urls import reverse
 from django.contrib.auth.models import BaseUserManager
 from django.contrib.auth.models import Group
@@ -77,18 +76,34 @@ class Comment(models.Model):
 
 
 class Industry(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="industries", verbose_name="Kullanıcı")
-    name = models.CharField(max_length=100, verbose_name="Endüstri Adı")
-    image = models.ImageField(upload_to="industry_images", null=False, blank=True, verbose_name="Endüstri Resmi")
-    icon_class = models.CharField(max_length=50, verbose_name="Endüstri İkon Sınıfı", help_text="FontAwesome ikon sınıfı, örn: 'fas fa-industry'")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
+    name = models.CharField(max_length=101, unique=True)  # unique=True eklendi
+    image = models.ImageField(upload_to="industry_images", null=False, blank=True)
+    icon_class = models.CharField(max_length=50, help_text="FontAwesome ikon sınıfı, örn: 'fas fa-industry'")
     content = models.TextField(verbose_name="İçerik")
-    subdescription = models.CharField(max_length=255, verbose_name="Alt Açıklama", blank=True, null=False)
+    subdescription = models.CharField(max_length=255, blank=True, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
+
     class Meta:
-        verbose_name = "Endüstri"
-        verbose_name_plural = "Endüstriler"
+        verbose_name = "Industry"
+        verbose_name_plural = "Industries"
 
     def get_absolute_url(self):
         return reverse('industry', kwargs={'pk': self.pk}) 
+
     def __str__(self):
         return self.name
+
+    def clean(self):
+        if len(self.name) > 100:
+            raise ValidationError({'name': 'Ensure this value has at most 100 characters (it has {}).'.format(len(self.name))})
+        
+        if len(self.icon_class) > 50:
+            raise ValidationError({'icon_class': 'Ensure this value has at most 50 characters (it has {}).'.format(len(self.icon_class))})
+
+        if len(self.subdescription) > 255:
+            raise ValidationError({'subdescription': 'Ensure this value has at most 255 characters (it has {}).'.format(len(self.subdescription))})
+
+    def save(self, *args, **kwargs):
+        self.full_clean()  # Bu satır doğrulamanın çalışmasını sağlar
+        super().save(*args, **kwargs)

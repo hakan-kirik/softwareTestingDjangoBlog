@@ -1,1 +1,2417 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2024-05-11T13:14:40.841Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "Programlama Dilleri", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2024-05-11T13:14:47.706Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "Web Geliştirme", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2024-05-11T13:14:56.486Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "Veritabanları", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2024-05-11T13:15:03.604Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "Makine", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2024-05-11T13:15:09.309Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "Veri Bilimi ve Veri Analitiği", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2024-05-11T13:15:15.725Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "Mobil Uygulama Geliştirme", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2024-05-11T13:15:23.152Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "Oyun Geliştirme", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2024-05-11T13:15:29.327Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "Sistem Programlama", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2024-05-11T13:15:35.245Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "Ağ Programlama ve Siber Güvenlik", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2024-05-11T13:15:42.205Z", "user": 1, "content_type": 8, "object_id": "10", "object_repr": "Yazılım Mimarisi ve Tasarımı", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2024-05-11T13:15:48.599Z", "user": 1, "content_type": 8, "object_id": "11", "object_repr": "Yazılım Testi ve Kalite Güvencesi", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2024-05-11T13:15:55.892Z", "user": 1, "content_type": 8, "object_id": "12", "object_repr": "DevOps ve Sürekli Entegrasyon/Sürekli Dağıtım (CI/CD)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2024-05-11T13:16:07.451Z", "user": 1, "content_type": 8, "object_id": "13", "object_repr": "Bulut Bilişim ve Sistem Yönetimi", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2024-05-11T13:16:13.224Z", "user": 1, "content_type": 8, "object_id": "14", "object_repr": "Microservices ve Servis Odaklı Mimariler", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2024-05-11T13:16:19.322Z", "user": 1, "content_type": 8, "object_id": "15", "object_repr": "Blockchain ve Kripto Paralar", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2024-05-11T13:16:24.554Z", "user": 1, "content_type": 8, "object_id": "16", "object_repr": "Web Güvenliği ve Ethical Hacking", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2024-05-11T13:16:32.956Z", "user": 1, "content_type": 8, "object_id": "17", "object_repr": "Nesnelerin İnterneti (IoT) ve Gömülü Sistemler", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2024-05-11T13:16:37.847Z", "user": 1, "content_type": 8, "object_id": "18", "object_repr": "Veri Tabanlı Uygulama Geliştirme", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2024-05-11T13:16:45.835Z", "user": 1, "content_type": 8, "object_id": "19", "object_repr": "Yazılım Geliştirme Araçları ve Teknikler", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2024-05-11T13:16:51.879Z", "user": 1, "content_type": 8, "object_id": "20", "object_repr": "Yazılım Endüstrisi Haberleri ve Trendler", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2024-05-11T13:17:41.170Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "Python", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2024-05-11T13:17:50.740Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "Django", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2024-05-11T13:17:53.483Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "Flask", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2024-05-11T13:17:57.992Z", "user": 1, "content_type": 9, "object_id": "4", "object_repr": "JavaScript", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2024-05-11T13:18:03.310Z", "user": 1, "content_type": 9, "object_id": "5", "object_repr": "React", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2024-05-11T13:18:09.333Z", "user": 1, "content_type": 9, "object_id": "6", "object_repr": "Angular", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2024-05-11T13:18:16.033Z", "user": 1, "content_type": 9, "object_id": "7", "object_repr": "Vue.js", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2024-05-11T13:18:21.597Z", "user": 1, "content_type": 9, "object_id": "8", "object_repr": "Node.js", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2024-05-11T13:18:26.726Z", "user": 1, "content_type": 9, "object_id": "9", "object_repr": "HTML5", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2024-05-11T13:18:31.556Z", "user": 1, "content_type": 9, "object_id": "10", "object_repr": "CSS3", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2024-05-11T13:18:38.060Z", "user": 1, "content_type": 9, "object_id": "11", "object_repr": "Frontend Development", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2024-05-11T13:18:45.114Z", "user": 1, "content_type": 9, "object_id": "12", "object_repr": "Backend Development", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2024-05-11T13:18:51.312Z", "user": 1, "content_type": 9, "object_id": "13", "object_repr": "Web Development Tools", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2024-05-11T13:18:56.773Z", "user": 1, "content_type": 9, "object_id": "14", "object_repr": "Data Science", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2024-05-11T13:19:02.875Z", "user": 1, "content_type": 9, "object_id": "15", "object_repr": "Machine Learning", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2024-05-11T13:19:08.925Z", "user": 1, "content_type": 9, "object_id": "16", "object_repr": "Artificial Intelligence", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2024-05-11T13:19:15.448Z", "user": 1, "content_type": 9, "object_id": "17", "object_repr": "Deep Learning", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_time": "2024-05-11T13:19:20.735Z", "user": 1, "content_type": 9, "object_id": "18", "object_repr": "Natural Language Processing", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 39, "fields": {"action_time": "2024-05-11T13:19:26.310Z", "user": 1, "content_type": 9, "object_id": "19", "object_repr": "Computer Vision", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2024-05-11T13:19:32.110Z", "user": 1, "content_type": 9, "object_id": "20", "object_repr": "Data Analysis", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2024-05-11T13:19:38.554Z", "user": 1, "content_type": 9, "object_id": "21", "object_repr": "Data Visualization", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2024-05-11T13:19:43.426Z", "user": 1, "content_type": 9, "object_id": "22", "object_repr": "Database Management", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 43, "fields": {"action_time": "2024-05-11T13:19:47.784Z", "user": 1, "content_type": 9, "object_id": "23", "object_repr": "SQL", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2024-05-11T13:19:53.766Z", "user": 1, "content_type": 9, "object_id": "24", "object_repr": "NoSQL", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2024-05-11T13:19:59.062Z", "user": 1, "content_type": 9, "object_id": "25", "object_repr": "ORM", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2024-05-11T13:20:04.506Z", "user": 1, "content_type": 9, "object_id": "26", "object_repr": "Android", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time": "2024-05-11T13:20:09.421Z", "user": 1, "content_type": 9, "object_id": "27", "object_repr": "iOS", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 48, "fields": {"action_time": "2024-05-11T13:20:14.395Z", "user": 1, "content_type": 9, "object_id": "28", "object_repr": "Swift", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2024-05-11T13:20:19.002Z", "user": 1, "content_type": 9, "object_id": "29", "object_repr": "Kotlin", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2024-05-11T13:20:27.221Z", "user": 1, "content_type": 9, "object_id": "30", "object_repr": "Flutter", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2024-05-11T13:20:32.546Z", "user": 1, "content_type": 9, "object_id": "31", "object_repr": "Flutter", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 52, "fields": {"action_time": "2024-05-11T13:20:39.018Z", "user": 1, "content_type": 9, "object_id": "32", "object_repr": "Unreal Engine", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2024-05-11T13:20:44.737Z", "user": 1, "content_type": 9, "object_id": "33", "object_repr": "System Programming", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2024-05-11T13:20:49.239Z", "user": 1, "content_type": 9, "object_id": "34", "object_repr": "Linux", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2024-05-11T13:20:53.958Z", "user": 1, "content_type": 9, "object_id": "35", "object_repr": "Shell Scripting", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time": "2024-05-11T13:21:00.098Z", "user": 1, "content_type": 9, "object_id": "36", "object_repr": "Network Programming", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 57, "fields": {"action_time": "2024-05-11T13:21:04.551Z", "user": 1, "content_type": 9, "object_id": "37", "object_repr": "Cybersecurity", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2024-05-11T13:21:10.775Z", "user": 1, "content_type": 9, "object_id": "38", "object_repr": "DevOps", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2024-05-11T13:21:15.940Z", "user": 1, "content_type": 9, "object_id": "39", "object_repr": "AWS", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2024-05-11T13:21:20.800Z", "user": 1, "content_type": 9, "object_id": "40", "object_repr": "Azure", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 61, "fields": {"action_time": "2024-05-11T13:21:26.514Z", "user": 1, "content_type": 9, "object_id": "41", "object_repr": "Microservices", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 62, "fields": {"action_time": "2024-05-11T13:21:32.540Z", "user": 1, "content_type": 9, "object_id": "42", "object_repr": "Docker", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2024-05-11T13:21:37.001Z", "user": 1, "content_type": 9, "object_id": "43", "object_repr": "Kubernetes", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2024-05-11T13:21:46.539Z", "user": 1, "content_type": 9, "object_id": "44", "object_repr": "Embedded Systems", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 65, "fields": {"action_time": "2024-05-11T13:21:54.321Z", "user": 1, "content_type": 9, "object_id": "45", "object_repr": "Git", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 66, "fields": {"action_time": "2024-05-11T13:22:00.401Z", "user": 1, "content_type": 9, "object_id": "46", "object_repr": "GitHub", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2024-05-11T13:22:04.608Z", "user": 1, "content_type": 9, "object_id": "47", "object_repr": "GitLab", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2024-05-11T13:22:09.996Z", "user": 1, "content_type": 9, "object_id": "48", "object_repr": "Design Patterns", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_time": "2024-05-11T13:22:15.338Z", "user": 1, "content_type": 9, "object_id": "49", "object_repr": "Scrum", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 70, "fields": {"action_time": "2024-05-11T13:22:21.024Z", "user": 1, "content_type": 9, "object_id": "50", "object_repr": "Testing", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2024-05-11T13:22:26.258Z", "user": 1, "content_type": 9, "object_id": "51", "object_repr": "Unit Testing", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2024-05-11T13:22:31.416Z", "user": 1, "content_type": 9, "object_id": "52", "object_repr": "Integration Testing", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2024-05-11T13:22:37.079Z", "user": 1, "content_type": 9, "object_id": "53", "object_repr": "Code Quality", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_time": "2024-05-11T13:22:42.651Z", "user": 1, "content_type": 9, "object_id": "54", "object_repr": "Logging", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 75, "fields": {"action_time": "2024-05-11T13:22:50.733Z", "user": 1, "content_type": 9, "object_id": "55", "object_repr": "Documentation", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2024-05-11T13:27:33.352Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2024-05-11T13:28:22.645Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2024-05-11T13:36:55.626Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 79, "fields": {"action_time": "2024-05-11T13:41:05.266Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 80, "fields": {"action_time": "2024-05-11T13:42:42.224Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 81, "fields": {"action_time": "2024-05-11T13:47:45.794Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 82, "fields": {"action_time": "2024-05-11T13:49:38.390Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 83, "fields": {"action_time": "2024-05-11T13:51:19.807Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 84, "fields": {"action_time": "2024-05-11T13:54:00.434Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 85, "fields": {"action_time": "2024-05-11T13:55:25.410Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 86, "fields": {"action_time": "2024-05-11T13:59:34.393Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "Bulut Bilişim ve Sistem Yönetimi", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 87, "fields": {"action_time": "2024-05-11T14:03:32.484Z", "user": 1, "content_type": 7, "object_id": "5", "object_repr": "Nesnelerin İnterneti Nedir?", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 88, "fields": {"action_time": "2024-05-11T14:04:14.279Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 89, "fields": {"action_time": "2024-05-11T14:13:13.251Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 90, "fields": {"action_time": "2024-05-11T14:21:14.615Z", "user": 1, "content_type": 11, "object_id": "1", "object_repr": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 91, "fields": {"action_time": "2024-05-11T14:25:35.411Z", "user": 1, "content_type": 11, "object_id": "2", "object_repr": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 92, "fields": {"action_time": "2024-05-11T14:28:50.238Z", "user": 1, "content_type": 11, "object_id": "3", "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 93, "fields": {"action_time": "2024-05-11T14:33:20.509Z", "user": 1, "content_type": 11, "object_id": "3", "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"}}, {"model": "admin.logentry", "pk": 94, "fields": {"action_time": "2024-05-11T14:34:45.897Z", "user": 1, "content_type": 11, "object_id": "2", "object_repr": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"}}, {"model": "admin.logentry", "pk": 95, "fields": {"action_time": "2024-05-11T14:35:25.410Z", "user": 1, "content_type": 11, "object_id": "1", "object_repr": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"}}, {"model": "admin.logentry", "pk": 96, "fields": {"action_time": "2024-05-11T14:36:01.188Z", "user": 1, "content_type": 11, "object_id": "3", "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"}}, {"model": "admin.logentry", "pk": 97, "fields": {"action_time": "2024-05-11T14:37:05.141Z", "user": 1, "content_type": 11, "object_id": "3", "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"}}, {"model": "admin.logentry", "pk": 98, "fields": {"action_time": "2024-05-11T14:37:23.199Z", "user": 1, "content_type": 11, "object_id": "2", "object_repr": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"}}, {"model": "admin.logentry", "pk": 99, "fields": {"action_time": "2024-05-11T14:37:39.739Z", "user": 1, "content_type": 11, "object_id": "1", "object_repr": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"}}, {"model": "admin.logentry", "pk": 100, "fields": {"action_time": "2024-05-11T14:50:37.226Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "Bulut Bilişim ve Sistem Yönetimi", "action_flag": 2, "change_message": "[{\"changed\": {\"name\": \"comment\", \"object\": \"Comment by hako on Bulut Bili\\u015fim ve Sistem Y\\u00f6netimi\", \"fields\": [\"Content\"]}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add content type", "content_type": 4, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change content type", "content_type": 4, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete content type", "content_type": 4, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view content type", "content_type": 4, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add session", "content_type": 5, "codename": "add_session"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change session", "content_type": 5, "codename": "change_session"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete session", "content_type": 5, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view session", "content_type": 5, "codename": "view_session"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add user", "content_type": 6, "codename": "add_customuser"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change user", "content_type": 6, "codename": "change_customuser"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete user", "content_type": 6, "codename": "delete_customuser"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view user", "content_type": 6, "codename": "view_customuser"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add blog post", "content_type": 7, "codename": "add_blogpost"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change blog post", "content_type": 7, "codename": "change_blogpost"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete blog post", "content_type": 7, "codename": "delete_blogpost"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view blog post", "content_type": 7, "codename": "view_blogpost"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add category", "content_type": 8, "codename": "add_category"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change category", "content_type": 8, "codename": "change_category"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete category", "content_type": 8, "codename": "delete_category"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view category", "content_type": 8, "codename": "view_category"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add tag", "content_type": 9, "codename": "add_tag"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change tag", "content_type": 9, "codename": "change_tag"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete tag", "content_type": 9, "codename": "delete_tag"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view tag", "content_type": 9, "codename": "view_tag"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add comment", "content_type": 10, "codename": "add_comment"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change comment", "content_type": 10, "codename": "change_comment"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete comment", "content_type": 10, "codename": "delete_comment"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view comment", "content_type": 10, "codename": "view_comment"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can add Endüstri", "content_type": 11, "codename": "add_industry"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can change Endüstri", "content_type": 11, "codename": "change_industry"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can delete Endüstri", "content_type": 11, "codename": "delete_industry"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can view Endüstri", "content_type": 11, "codename": "view_industry"}}, {"model": "auth.group", "pk": 1, "fields": {"name": "Blogger", "permissions": [25, 26, 27, 28, 41, 42, 43, 44]}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "blog", "model": "customuser"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "blog", "model": "blogpost"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "blog", "model": "category"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "blog", "model": "tag"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "blog", "model": "comment"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "blog", "model": "industry"}}, {"model": "blog.customuser", "pk": 1, "fields": {"password": "pbkdf2_sha256$600000$59OIfQ1qdRZ0Xottrjx5U0$8z49gIeYlpp2qigOOBxDIxFgJGJ/jk2e4LUwoDaIB6A=", "last_login": "2024-05-11T13:12:45.348Z", "is_superuser": true, "username": "hako", "first_name": "", "last_name": "", "email": "hako@hako.com", "is_staff": true, "is_active": true, "date_joined": "2024-05-11T13:08:16.714Z", "is_blogger": false, "groups": [1], "user_permissions": []}}, {"model": "blog.customuser", "pk": 2, "fields": {"password": "pbkdf2_sha256$600000$59OIfQ1qdRZ0Xottrjx5U0$8z49gIeYlpp2qigOOBxDIxFgJGJ/jk2e4LUwoDaIB6A=", "last_login": "2024-05-11T13:12:28.919Z", "is_superuser": false, "username": "test", "first_name": "", "last_name": "", "email": "test@test.com", "is_staff": true, "is_active": true, "date_joined": "2024-05-11T13:11:56.475Z", "is_blogger": false, "groups": [1], "user_permissions": []}}, {"model": "blog.category", "pk": 1, "fields": {"name": "Programlama Dilleri"}}, {"model": "blog.category", "pk": 2, "fields": {"name": "Web Geliştirme"}}, {"model": "blog.category", "pk": 3, "fields": {"name": "Veritabanları"}}, {"model": "blog.category", "pk": 4, "fields": {"name": "Makine"}}, {"model": "blog.category", "pk": 5, "fields": {"name": "Veri Bilimi ve Veri Analitiği"}}, {"model": "blog.category", "pk": 6, "fields": {"name": "Mobil Uygulama Geliştirme"}}, {"model": "blog.category", "pk": 7, "fields": {"name": "Oyun Geliştirme"}}, {"model": "blog.category", "pk": 8, "fields": {"name": "Sistem Programlama"}}, {"model": "blog.category", "pk": 9, "fields": {"name": "Ağ Programlama ve Siber Güvenlik"}}, {"model": "blog.category", "pk": 10, "fields": {"name": "Yazılım Mimarisi ve Tasarımı"}}, {"model": "blog.category", "pk": 11, "fields": {"name": "Yazılım Testi ve Kalite Güvencesi"}}, {"model": "blog.category", "pk": 12, "fields": {"name": "DevOps ve Sürekli Entegrasyon/Sürekli Dağıtım (CI/CD)"}}, {"model": "blog.category", "pk": 13, "fields": {"name": "Bulut Bilişim ve Sistem Yönetimi"}}, {"model": "blog.category", "pk": 14, "fields": {"name": "Microservices ve Servis Odaklı Mimariler"}}, {"model": "blog.category", "pk": 15, "fields": {"name": "Blockchain ve Kripto Paralar"}}, {"model": "blog.category", "pk": 16, "fields": {"name": "Web Güvenliği ve Ethical Hacking"}}, {"model": "blog.category", "pk": 17, "fields": {"name": "Nesnelerin İnterneti (IoT) ve Gömülü Sistemler"}}, {"model": "blog.category", "pk": 18, "fields": {"name": "Veri Tabanlı Uygulama Geliştirme"}}, {"model": "blog.category", "pk": 19, "fields": {"name": "Yazılım Geliştirme Araçları ve Teknikler"}}, {"model": "blog.category", "pk": 20, "fields": {"name": "Yazılım Endüstrisi Haberleri ve Trendler"}}, {"model": "blog.tag", "pk": 1, "fields": {"name": "Python"}}, {"model": "blog.tag", "pk": 2, "fields": {"name": "Django"}}, {"model": "blog.tag", "pk": 3, "fields": {"name": "Flask"}}, {"model": "blog.tag", "pk": 4, "fields": {"name": "JavaScript"}}, {"model": "blog.tag", "pk": 5, "fields": {"name": "React"}}, {"model": "blog.tag", "pk": 6, "fields": {"name": "Angular"}}, {"model": "blog.tag", "pk": 7, "fields": {"name": "Vue.js"}}, {"model": "blog.tag", "pk": 8, "fields": {"name": "Node.js"}}, {"model": "blog.tag", "pk": 9, "fields": {"name": "HTML5"}}, {"model": "blog.tag", "pk": 10, "fields": {"name": "CSS3"}}, {"model": "blog.tag", "pk": 11, "fields": {"name": "Frontend Development"}}, {"model": "blog.tag", "pk": 12, "fields": {"name": "Backend Development"}}, {"model": "blog.tag", "pk": 13, "fields": {"name": "Web Development Tools"}}, {"model": "blog.tag", "pk": 14, "fields": {"name": "Data Science"}}, {"model": "blog.tag", "pk": 15, "fields": {"name": "Machine Learning"}}, {"model": "blog.tag", "pk": 16, "fields": {"name": "Artificial Intelligence"}}, {"model": "blog.tag", "pk": 17, "fields": {"name": "Deep Learning"}}, {"model": "blog.tag", "pk": 18, "fields": {"name": "Natural Language Processing"}}, {"model": "blog.tag", "pk": 19, "fields": {"name": "Computer Vision"}}, {"model": "blog.tag", "pk": 20, "fields": {"name": "Data Analysis"}}, {"model": "blog.tag", "pk": 21, "fields": {"name": "Data Visualization"}}, {"model": "blog.tag", "pk": 22, "fields": {"name": "Database Management"}}, {"model": "blog.tag", "pk": 23, "fields": {"name": "SQL"}}, {"model": "blog.tag", "pk": 24, "fields": {"name": "NoSQL"}}, {"model": "blog.tag", "pk": 25, "fields": {"name": "ORM"}}, {"model": "blog.tag", "pk": 26, "fields": {"name": "Android"}}, {"model": "blog.tag", "pk": 27, "fields": {"name": "iOS"}}, {"model": "blog.tag", "pk": 28, "fields": {"name": "Swift"}}, {"model": "blog.tag", "pk": 29, "fields": {"name": "Kotlin"}}, {"model": "blog.tag", "pk": 30, "fields": {"name": "Flutter"}}, {"model": "blog.tag", "pk": 31, "fields": {"name": "Flutter"}}, {"model": "blog.tag", "pk": 32, "fields": {"name": "Unreal Engine"}}, {"model": "blog.tag", "pk": 33, "fields": {"name": "System Programming"}}, {"model": "blog.tag", "pk": 34, "fields": {"name": "Linux"}}, {"model": "blog.tag", "pk": 35, "fields": {"name": "Shell Scripting"}}, {"model": "blog.tag", "pk": 36, "fields": {"name": "Network Programming"}}, {"model": "blog.tag", "pk": 37, "fields": {"name": "Cybersecurity"}}, {"model": "blog.tag", "pk": 38, "fields": {"name": "DevOps"}}, {"model": "blog.tag", "pk": 39, "fields": {"name": "AWS"}}, {"model": "blog.tag", "pk": 40, "fields": {"name": "Azure"}}, {"model": "blog.tag", "pk": 41, "fields": {"name": "Microservices"}}, {"model": "blog.tag", "pk": 42, "fields": {"name": "Docker"}}, {"model": "blog.tag", "pk": 43, "fields": {"name": "Kubernetes"}}, {"model": "blog.tag", "pk": 44, "fields": {"name": "Embedded Systems"}}, {"model": "blog.tag", "pk": 45, "fields": {"name": "Git"}}, {"model": "blog.tag", "pk": 46, "fields": {"name": "GitHub"}}, {"model": "blog.tag", "pk": 47, "fields": {"name": "GitLab"}}, {"model": "blog.tag", "pk": 48, "fields": {"name": "Design Patterns"}}, {"model": "blog.tag", "pk": 49, "fields": {"name": "Scrum"}}, {"model": "blog.tag", "pk": 50, "fields": {"name": "Testing"}}, {"model": "blog.tag", "pk": 51, "fields": {"name": "Unit Testing"}}, {"model": "blog.tag", "pk": 52, "fields": {"name": "Integration Testing"}}, {"model": "blog.tag", "pk": 53, "fields": {"name": "Code Quality"}}, {"model": "blog.tag", "pk": 54, "fields": {"name": "Logging"}}, {"model": "blog.tag", "pk": 55, "fields": {"name": "Documentation"}}, {"model": "blog.blogpost", "pk": 1, "fields": {"title": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar", "content": "<p>\r\n    <strong>Yazılım geliştirme sürecinde, yazılım mimarisi ve tasarımı, başarılı bir proje için temel unsurlardan biridir. Bu yazıda, yazılım mimarisi ve tasarımının temel ilkelerini ve popüler yaklaşımlarını ele alacağız.</strong>\r\n</p>\r\n\r\n<p>\r\n    <strong>Yazılım Mimarisi Nedir?</strong><br>\r\n    Yazılım mimarisi, bir yazılım sisteminin yüksek seviyeli yapısını, bileşenlerini ve ilişkilerini tanımlayan kavramsal bir modeldir. Bir binanın mimari tasarımı gibi, yazılım mimarisi de bir sistemin temel altyapısını oluşturur ve geliştirme sürecinde rehberlik eder.\r\n</p>\r\n\r\n<p>\r\n    <strong>Yazılım Tasarımı İlkeleri:</strong><br>\r\n    <ul>\r\n        <li>Modülerlik: Yazılımın parçalara ayrılabilir ve bağımsız modüller olarak geliştirilebilir olması.</li>\r\n        <li>Esneklik: Değişen gereksinimlere kolayca uyum sağlayabilme yeteneği.</li>\r\n        <li>Yeniden Kullanılabilirlik: Kodun tekrar kullanılabilir olması, böylece gereksiz tekrarlar önlenir.</li>\r\n        <li>Bileşen Odaklılık: Yazılımın bağımsız bileşenlere ayrılması ve bir araya getirilerek karmaşık sistemlerin oluşturulması.</li>\r\n        <li>Ayrıştırma: Karmaşık sistemlerin küçük, yönetilebilir parçalara bölünmesi.</li>\r\n        <li>Uyumlu: Farklı bileşenlerin birlikte uyumlu çalışabilmesi.</li>\r\n    </ul>\r\n</p>\r\n\r\n<p>\r\n    <strong>Yazılım Tasarımı Yaklaşımları:</strong><br>\r\n    <ul>\r\n        <li>Nesne Yönelimli Tasarım (OOD): Nesnelerin bir araya gelerek karmaşık sistemlerin modellenmesi ve uygulanması.</li>\r\n        <li>Bileşen Tabanlı Tasarım: Bağımsız bileşenlerin yeniden kullanılabilir şekilde tasarlanması ve bir araya getirilerek sistemlerin oluşturulması.</li>\r\n        <li>Servis Odaklı Mimarisi (SOA): Hizmet odaklı tasarımın benimsendiği bir yaklaşım, bu yaklaşımda hizmetler birbirleriyle bağımsız olarak iletişim kurarlar.</li>\r\n        <li>Mikroservis Mimarisi: Küçük, bağımsız hizmetlerin bir araya gelerek bir sistem oluşturduğu bir mimari yaklaşım.</li>\r\n    </ul>\r\n</p>\r\n\r\n<p>\r\n    <strong>Sonuç:</strong><br>\r\n    Yazılım mimarisi ve tasarımı, bir yazılım projesinin başarılı bir şekilde hayata geçirilmesinde kritik öneme sahiptir. Temel ilkelerin ve popüler yaklaşımların anlaşılması, geliştiricilere daha esnek, modüler ve yeniden kullanılabilir yazılım sistemleri oluşturma yeteneği kazandırır. Bu yazıda ele aldığımız konular, yazılım geliştirme sürecinde temel bir rehberlik sağlayacaktır.\r\n</p>", "author": 1, "created_at": "2024-05-11T13:27:33.348Z", "cover_image": "blog_covers/softwareart.png", "category": 10, "tags": [48, 12]}}, {"model": "blog.blogpost", "pk": 2, "fields": {"title": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı", "content": "<p>\r\n\r\n\r\n    <p>\r\n        Yazılım geliştirme dünyası, sürekli değişen gereksinimlere hızla cevap verebilmek için sürekli olarak evriliyor. Bu evrimin merkezinde ise DevOps ve Sürekli Entegrasyon/Sürekli Dağıtım (CI/CD) gibi yaklaşımlar bulunuyor. Bu yazıda, DevOps ve CI/CD'nin yazılım geliştirme sürecindeki rolünü, sağladığı avantajları ve uygulama ipuçlarını ele alacağız.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>DevOps: Kavram ve Önemi</strong><br>\r\n        DevOps, yazılım geliştirme ve IT operasyonları arasındaki işbirliğini ve etkileşimi güçlendiren bir kültür, hareket ve pratikler bütünüdür. Geleneksel olarak, geliştirme ve operasyon ekipleri birbirinden izole çalışırken, DevOps bu duvarları yıkmayı hedefler. Bu sayede, yazılımın hızlı bir şekilde teslim edilmesi, hataların azaltılması ve işletme değerinin artırılması sağlanır.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>CI/CD: Sürekli Entegrasyon ve Sürekli Dağıtım</strong><br>\r\n        CI/CD, yazılım geliştirme sürecinde tekrarlanabilirlik, otomasyon ve hızı vurgulayan bir yaklaşımdır. Sürekli Entegrasyon (CI), yazılımın sürekli olarak birleştirilmesini ve otomatik olarak test edilmesini sağlar. Sürekli Dağıtım (CD) ise yazılımın sürekli olarak canlı ortama dağıtılmasını, test edilmesini ve hatta otomatik olarak kullanıma alınmasını hedefler. Bu süreçler, hızlı geri bildirim döngüsü sağlayarak, yazılımın hızlı bir şekilde ve güvenilir bir şekilde teslim edilmesini sağlar.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>DevOps ve CI/CD'nin Faydaları:</strong><br>\r\n        <ul>\r\n            <li>Hızlı Geri Bildirim: Kod değişiklikleri hızlı bir şekilde entegre edilir ve otomatik olarak test edilir, böylece hataların erken aşamalarda tespit edilmesi sağlanır.</li>\r\n            <li>Sürekli İyileştirme: Sürekli geri bildirim ve sürekli entegrasyon/düzeltme süreçleri, sürekli iyileştirmeyi teşvik eder.</li>\r\n            <li>Daha Yüksek Kalite: Otomatik testler ve tekrarlanabilir süreçler, yazılım kalitesini artırır.</li>\r\n            <li>Daha Az Hata: Hatalı kod değişiklikleri otomatik olarak tespit edilir ve geri alınır, böylece üretim ortamına gitme olasılığı azalır.</li>\r\n            <li>Hızlı Dağıtım: Yazılımın hızlı ve güvenli bir şekilde canlı ortama dağıtılması sağlanır, işletme değeri daha hızlı elde edilir.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Uygulama İpuçları:</strong><br>\r\n        <ul>\r\n            <li>Kültürü Önemseyin: DevOps sadece araçlar ve süreçlerle ilgili değildir, aynı zamanda bir kültür ve değerler bütünüdür. İşbirliği, iletişim ve sürekli öğrenmeyi teşvik eden bir ortam oluşturun.</li>\r\n            <li>Otomasyonu Kullanın: Tekrar eden görevleri otomatikleştirin ve sürekli entegrasyon/düzeltme süreçlerini otomatik hale getirin.</li>\r\n            <li>Geri Bildirim Döngüsünü Kısaltın: Hızlı geri bildirim almak için test süreçlerini optimize edin ve otomatikleştirin.</li>\r\n            <li>İşletme İle Yakın Çalışın: Yazılım geliştirme sürecini işletme ihtiyaçlarına uygun şekilde şekillendirin ve sürekli olarak geri bildirim alın.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sonuç:</strong><br>\r\n        DevOps ve CI/CD, yazılım geliştirme sürecini dönüştüren ve modern bir yaklaşım benimseyen organizasyonlar için bir zorunluluktur. Bu yaklaşımlar, hız, kalite ve işletme değeri sağlayarak rekabet avantajı sağlar. Bu yazıda ele aldığımız konular, yazılım geliştirme sürecinde DevOps ve CI/CD'nin nasıl uygulanabileceği konusunda bir rehber sağlayacaktır.\r\n    </p>\r\n</p>", "author": 1, "created_at": "2024-05-11T13:36:55.624Z", "cover_image": "blog_covers/devops.png", "category": 12, "tags": [38, 39, 40, 42, 43]}}, {"model": "blog.blogpost", "pk": 3, "fields": {"title": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk", "content": "<p>\r\n \r\n    <p>\r\n        Sistem programlama, bilgisayar sistemlerinin temellerini anlamak ve yönetmek için geliştirilen yazılım uygulamalarını kapsayan kapsamlı bir disiplindir. Bu yazıda, sistem programlamanın ne olduğunu, nasıl çalıştığını ve neden önemli olduğunu inceleyeceğiz.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sistem Programlama Nedir?</strong><br>\r\n        Sistem programlama, işletim sistemleri, sürücüler, ağ protokolleri ve donanım arasındaki iletişimi yöneten yazılım bileşenlerinin geliştirilmesini içerir. Bu bileşenler, bilgisayarın kaynaklarını etkin bir şekilde kullanmak, performansı artırmak ve güvenliği sağlamak için kritik öneme sahiptir.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Neden Önemlidir?</strong><br>\r\n        Sistem programlama, bilgisayar sistemlerinin güvenilirliği, performansı ve güvenliği için temel bir rol oynar. Özellikle, işletim sistemleri gibi temel bileşenler, bilgisayar kaynaklarını yönetir, uygulamalar arasındaki etkileşimi kolaylaştırır ve sistem güvenliğini sağlar. Ayrıca, sürücüler ve ağ protokolleri gibi diğer bileşenler, donanımın ve ağ iletişiminin verimli bir şekilde çalışmasını sağlar.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sistem Programlama Uygulamaları:</strong><br>\r\n        <ul>\r\n            <li>İşletim Sistemleri Geliştirme: İşletim sistemleri, bilgisayar kaynaklarını yöneten ve uygulamalar arasında iletişimi sağlayan temel sistem yazılımlarıdır. Sistem programlama, işletim sistemlerinin geliştirilmesi ve özelleştirilmesinde kullanılır.</li>\r\n            <li>Sürücü Geliştirme: Sürücüler, bilgisayarın donanım bileşenleriyle iletişim kuran yazılım bileşenleridir. Sistem programlama, sürücülerin geliştirilmesi ve uyumlu hale getirilmesi için kullanılır.</li>\r\n            <li>Ağ Programlama: Ağ protokolleri ve iletişim yazılımları, bilgisayarların ağlar arası iletişimini sağlar. Sistem programlama, ağ protokolleri ve iletişim yazılımlarının geliştirilmesi ve optimize edilmesi için kullanılır.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sistem Programlama Araçları ve Dilleri:</strong><br>\r\n        <ul>\r\n            <li>C ve C++ gibi düşük seviye diller: Bellek yönetimi, donanım erişimi ve performans optimizasyonu gibi görevler için idealdir.</li>\r\n            <li>Assembly dili: Doğrudan donanım erişimi sağlar ve performans açısından kritik uygulamalar için tercih edilir.</li>\r\n            <li>Rust gibi güvenli diller: Bellek güvenliği ve paralel programlama için idealdir.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sonuç:</strong><br>\r\n        Sistem programlama, bilgisayar sistemlerinin temellerini anlamak ve yönetmek için kritik öneme sahip bir disiplindir. İşletim sistemleri, sürücüler ve ağ protokolleri gibi temel bileşenlerin geliştirilmesi ve optimize edilmesi, bilgisayar sistemlerinin güvenilirliği, performansı ve güvenliği için hayati öneme sahiptir. Bu yazıda ele aldığımız konular, sistem programlamanın önemini ve uygulamalarını daha iyi anlamanıza yardımcı olacaktır.\r\n    </p>\r\n</p>", "author": 1, "created_at": "2024-05-11T13:41:05.263Z", "cover_image": "blog_covers/system-programming.jpg", "category": 8, "tags": [33, 35, 36]}}, {"model": "blog.blogpost", "pk": 4, "fields": {"title": "Bulut Bilişim ve Sistem Yönetimi", "content": "<p>\r\n    <strong>Bulut Bilişim ve Sistem Yönetimi</strong>\r\n</p>\r\n\r\n<p>\r\n    Bulut bilişim, günümüzün en önemli teknolojik trendlerinden biridir ve işletmelerin veri depolama, işlem gücü ve uygulama dağıtımı gibi ihtiyaçlarını karşılamak için yaygın olarak kullanılmaktadır. Bu yazıda, bulut bilişimin temel kavramlarını ve sistem yönetimi açısından önemini ele alacağız.\r\n</p>\r\n\r\n<p>\r\n    <strong>Bulut Bilişim Nedir?</strong><br>\r\n    Bulut bilişim, internet üzerinden paylaşılan bilgi, kaynak ve altyapıya erişim sağlayan bir teknoloji modelidir. Geleneksel olarak, işletmeler kendi sunucularını ve veri merkezlerini yönetirken, bulut bilişim hizmetleri sağlayıcılarından bu hizmetleri kiralayarak ihtiyaçlarını karşılarlar.\r\n</p>\r\n\r\n<p>\r\n    <strong>Sistem Yönetimi ve Bulut Bilişim</strong><br>\r\n    Sistem yönetimi, bir organizasyonun BT altyapısını yönetme ve işletme süreçlerini denetleme sürecidir. Bulut bilişim, sistem yönetimi için bir dizi avantaj sunar. Bunlar arasında:\r\n    <ul>\r\n        <li><strong>Elastiklik:</strong> Bulut bilişim, ihtiyaçlar arttıkça veya azaldıkça işletmelerin kaynakları esnek bir şekilde ölçeklendirmesine olanak tanır.</li>\r\n        <li><strong>Yedekleme ve Kurtarma:</strong> Bulut tabanlı yedekleme ve kurtarma çözümleri, veri kaybını önler ve iş sürekliliğini sağlar.</li>\r\n        <li><strong>Güvenlik:</strong> Güvenlik uzmanları tarafından yönetilen bulut bilişim hizmetleri, verilerin korunmasını ve uyumluluğun sağlanmasını kolaylaştırır.</li>\r\n        <li><strong>Yönetilen Hizmetler:</strong> Bulut sağlayıcıları, altyapıyı yönetme ve bakımı yapma gibi görevleri üstlenerek sistem yöneticilerine zaman kazandırır.</li>\r\n    </ul>\r\n</p>\r\n\r\n<p>\r\n    <strong>Sonuç:</strong><br>\r\n    Bulut bilişim, işletmelerin verimliliği artırmak, maliyetleri düşürmek ve rekabet avantajı elde etmek için güçlü bir araçtır. Sistem yönetimi perspektifinden bakıldığında, bulut bilişim hizmetleri, BT altyapısının esnekliğini artırır, veri güvenliğini sağlar ve işletmelerin daha verimli çalışmasını sağlar.\r\n</p>", "author": 1, "created_at": "2024-05-11T13:59:34.391Z", "cover_image": "blog_covers/Cloud_computing.png", "category": 13, "tags": [40, 42, 38, 39]}}, {"model": "blog.blogpost", "pk": 5, "fields": {"title": "Nesnelerin İnterneti Nedir?", "content": "<p>\r\n    Nesnelerin İnterneti (IoT), fiziksel cihazların internete bağlanması ve birbirleriyle iletişim kurması üzerine kurulu bir teknoloji alanıdır. Gömülü sistemler ise bu cihazların içine yerleştirilen bilgisayar sistemleridir. Bu yazıda, IoT ve gömülü sistemlerin temel kavramlarını ve birbirleriyle olan ilişkisini ele alacağız.\r\n</p>\r\n\r\n<p>\r\n    <strong>Nesnelerin İnterneti Nedir?</strong><br>\r\n    Nesnelerin İnterneti, günlük hayatta kullanılan her türlü cihazın (akıllı telefonlar, ev aletleri, araçlar, sağlık cihazları vb.) internete bağlanmasını ve veri alışverişi yapmasını sağlayan bir teknoloji alanıdır. IoT cihazları genellikle sensörler, işlemciler ve iletişim modülleri gibi bileşenler içerir.\r\n</p>\r\n\r\n<p>\r\n    <strong>Gömülü Sistemler Nedir?</strong><br>\r\n    Gömülü sistemler, genellikle tek bir görevi yerine getirmek üzere optimize edilmiş bilgisayar sistemleridir. Bu sistemler, içine yerleştirildikleri cihazın temel işlevlerini gerçekleştirmek için tasarlanır. Örneğin, bir araba motor kontrol ünitesi veya bir akıllı termostat birer gömülü sistemdir.\r\n</p>\r\n\r\n<p>\r\n    <strong>IoT ve Gömülü Sistemler Arasındaki İlişki</strong><br>\r\n    IoT cihazları genellikle gömülü sistemler içerir. Sensörlerden gelen verileri işleyen, kararlar alan ve iletişim kuran küçük bilgisayarlar içeren IoT cihazları, bir tür gömülü sistemdir. Gömülü sistemler, IoT ekosisteminin temel yapı taşlarını oluşturur.\r\n</p>\r\n\r\n<p>\r\n    <strong>Sonuç:</strong><br>\r\n    Nesnelerin İnterneti (IoT) ve gömülü sistemler, günümüzün giderek daha bağlantılı ve akıllı dünyasının temelini oluşturur. IoT cihazları, hayatımızı kolaylaştırmak, verimliliği artırmak ve yeni iş fırsatları yaratmak için gömülü sistemlerin gücünden yararlanır. Bu yazıda ele aldığımız konular, IoT ve gömülü sistemlerin temelini anlamanıza ve bu alanda daha fazla keşif yapmanıza yardımcı olacaktır.\r\n</p>", "author": 1, "created_at": "2024-05-11T14:03:32.482Z", "cover_image": "blog_covers/iot.jpg", "category": 17, "tags": [1]}}, {"model": "blog.comment", "pk": 1, "fields": {"blog_post": 4, "author": 1, "content": "Harika bir blog , çok şey öğrendim.", "created_at": "2024-05-11T14:49:28.844Z"}}, {"model": "blog.industry", "pk": 1, "fields": {"user": 1, "name": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın", "image": "industry_images/bulut-bilisim-header.jpg", "icon_class": "fas fa fa-cloud", "content": "<p>Bulut bilişim, işletmelerin veri depolama, işlem gücü ve uygulama erişimini internet üzerinden sağlayan bir teknoloji çözümüdür. Geleneksel yerel sunucu tabanlı sistemlerden buluta geçiş, birçok işletmeye daha esnek, güvenilir ve ölçeklenebilir bir altyapı sunar. Bulut bilişim ve altyapı hizmetleri, işletmelerin rekabet avantajı elde etmesine, maliyetleri azaltmasına ve iş süreçlerini optimize etmesine yardımcı olur.</p>\r\n\r\n<h6>Avantajları:</h6>\r\n\r\n<ul>\r\n    <li>\r\n        <strong>Ölçeklenebilirlik ve Esneklik:</strong> Bulut bilişim, işletmelerin iş yüklerini artırıp azaltmasına göre kolayca ölçeklendirilebilir. Mevsimsel taleplere veya beklenmedik iş yüklerine anında yanıt verebilir.\r\n    </li>\r\n    <li>\r\n        <strong>Maliyet Tasarrufu:</strong> Geleneksel yerel sunucu altyapısına kıyasla, bulut bilişim kullanımında donanım maliyetleri ve bakım giderleri önemli ölçüde azalır. İşletmeler, yalnızca kullandıkları hizmetler için ödeme yaparlar ve kaynakları daha verimli kullanabilirler.\r\n    </li>\r\n    <li>\r\n        <strong>Yüksek Güvenlik:</strong> Güvenlik, bulut bilişim sağlayıcıları için en önemli önceliklerden biridir. Veri merkezlerindeki güvenlik önlemleri ve sıkı kimlik doğrulama yöntemleri, işletmelerin hassas verilerini korur.\r\n    </li>\r\n    <li>\r\n        <strong>Uzaktan Erişim:</strong> Bulut bilişim, çalışanların ve ekiplerin herhangi bir yerden, herhangi bir cihazdan erişim sağlamasını kolaylaştırır. Bu da esnek çalışma düzenlerini teşvik eder ve işbirliğini artırır.\r\n    </li>\r\n    <li>\r\n        <strong>Sürekli Bakım ve Güncelleme:</strong> Bulut bilişim sağlayıcıları, altyapının sürekli olarak bakımını ve güncellemesini sağlarlar. Bu sayede işletmeler, güncel kalmak ve güvenlik açıklarını en aza indirmek için ekstra kaynaklar harcamak zorunda kalmazlar.\r\n    </li>\r\n</ul>\r\n\r\n<h6>Bizim Hizmetlerimiz:</h6>\r\n\r\n<p>Şirketimiz, Bulut Bilişim ve Altyapı Hizmetleri alanında uzmanlaşmış bir ekiple, işletmelerin ihtiyaçlarına uygun çözümler sunar. Danışmanlık hizmetlerimiz, buluta geçiş stratejileri geliştirmekten, altyapı optimizasyonuna kadar geniş bir yelpazeyi kapsar. Ayrıca, bulut tabanlı uygulama geliştirme, veri yönetimi ve güvenlik hizmetleri de sunuyoruz.</p>\r\n\r\n<p>İşinizi geleceğe taşımak ve bulut avantajlarından yararlanmak için bize bugün katılın!</p>", "subdescription": "İşinizi Geleceğe Taşıyın", "created_at": "2024-05-11T14:21:14.614Z"}}, {"model": "blog.industry", "pk": 2, "fields": {"user": 1, "name": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun", "image": "industry_images/cybersecurity.jpeg", "icon_class": "fas fa fa-shield", "content": "<p>Günümüzde, dijital dönüşüm ile birlikte işletmelerin karşılaştığı siber tehditler giderek artmaktadır. Veri ihlalleri, kötü amaçlı yazılımlar ve çevrimiçi saldırılar, işletmeler için ciddi riskler oluşturabilir. Siber güvenlik çözümleri, bu tür tehditlere karşı koruma sağlar ve işletmelerin verilerini, sistemlerini ve itibarını korumak için kapsamlı bir yaklaşım sunar.</p>\r\n\r\n<h6>Avantajları:</h6>\r\n\r\n<ul>\r\n    <li>\r\n        <strong>Kapsamlı Koruma:</strong> Siber güvenlik çözümleri, ağ güvenliği, veri koruma, kimlik doğrulama, tehdit izleme ve güvenlik olayı yönetimi gibi alanlarda kapsamlı bir koruma sağlar. Bu sayede işletmeler, birden fazla saldırı vektörüne karşı savunma yapabilirler.\r\n    </li>\r\n    <li>\r\n        <strong>Veri Güvenliği:</strong> Hassas verilerin korunması, işletmeler için büyük önem taşır. Siber güvenlik çözümleri, veri şifreleme, erişim kontrolü ve güvenli depolama gibi teknolojilerle veri güvenliğini sağlar.\r\n    </li>\r\n    <li>\r\n        <strong>Sürekli İzleme ve Analiz:</strong> Tehditlerin hızla değiştiği bir ortamda, sürekli izleme ve tehdit analizi önemlidir. Siber güvenlik çözümleri, ağ trafiğini, günlükleri ve kullanıcı etkinliklerini izler ve anormal aktiviteleri tespit ederek hızlı bir şekilde müdahale eder.\r\n    </li>\r\n    <li>\r\n        <strong>Uçtan Uca Koruma:</strong> İşletmelerin siber güvenliği, her seviyede sağlanmalıdır. Siber güvenlik çözümleri, ağ uç noktalarından veri merkezlerine kadar geniş bir yelpazede koruma sağlar.\r\n    </li>\r\n    <li>\r\n        <strong>Yenilikçi Teknolojiler:</strong> Siber güvenlik alanında sürekli olarak yeni tehditler ve saldırı teknikleri ortaya çıkar. Siber güvenlik çözümleri, güncel ve yenilikçi teknolojilerle bu tehditlere karşı koruma sağlar.\r\n    </li>\r\n</ul>\r\n\r\n<h6>Bizim Çözümlerimiz:</h6>\r\n\r\n<p>Şirketimiz, siber güvenlik alanında uzmanlaşmış bir ekiple, işletmelerin güvenlik ihtiyaçlarına uygun çözümler sunar. Siber tehditlerin tespiti ve engellenmesinden, güvenlik açıklarının kapatılmasına kadar geniş bir yelpazede hizmetler sunuyoruz. Ayrıca, güvenlik eğitimi ve danışmanlık hizmetleri de sunarak işletmelerin güvenlik bilincini artırmaya yardımcı oluyoruz.</p>\r\n\r\n<p>İşletmenizi siber tehditlere karşı korumak ve güvenlik seviyenizi artırmak için bize bugün katılın!</p>", "subdescription": "İşletmenizi Tehditlere Karşı Koruyun", "created_at": "2024-05-11T14:25:35.410Z"}}, {"model": "blog.industry", "pk": 3, "fields": {"user": 1, "name": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin", "image": "industry_images/Yazilim_Danisman.jpeg", "icon_class": "fas fa fa-terminal", "content": "<p>Günümüz iş dünyasında, rekabet avantajı elde etmek ve sürdürmek için dijital dönüşüm kaçınılmaz bir gerekliliktir. Ancak, bu dönüşüm sürecinde karşılaşılan karmaşıklık ve belirsizlikler, işletmeler için zorlayıcı olabilir. İşte bu noktada, yazılım danışmanlığı ve strateji hizmetleri devreye girer, işletmelere dijital dönüşüm yolculuklarında rehberlik eder ve stratejik bir yaklaşım sunar.</p>\r\n\r\n<h6>Avantajları:</h6>\r\n\r\n<ul>\r\n    <li>\r\n        <strong>Dijital Strateji Geliştirme:</strong> Yazılım danışmanları, işletmelerin mevcut durumlarını değerlendirir, hedeflerini belirler ve uygun dijital stratejiler geliştirir. Bu stratejiler, işletmelerin kısa ve uzun vadeli hedeflerine uygun olarak şekillendirilir.\r\n    </li>\r\n    <li>\r\n        <strong>Teknoloji Seçimi ve Uygulama:</strong> İşletmeler için uygun olan teknoloji seçimi, dönüşüm sürecinin başarısı açısından kritiktir. Yazılım danışmanları, işletmelerin ihtiyaçlarına uygun teknoloji çözümlerini belirler ve uygulamaya geçirir.\r\n    </li>\r\n    <li>\r\n        <strong>İş Süreçleri ve Verimlilik:</strong> Dijital dönüşüm, iş süreçlerini yeniden şekillendirme fırsatı sunar. Yazılım danışmanları, işletmelerin süreçlerini optimize eder, verimliliği artırır ve maliyetleri azaltır.\r\n    </li>\r\n    <li>\r\n        <strong>Eğitim ve Yetenek Geliştirme:</strong> Dijital dönüşüm sürecinde, personelin eğitimi ve yetenek geliştirilmesi önemlidir. Yazılım danışmanları, işletmelerin personeline uygun eğitim programları ve yetenek geliştirme fırsatları sunar.\r\n    </li>\r\n    <li>\r\n        <strong>Güvenlik ve Uyum:</strong> Dijital dönüşüm sürecinde güvenlik ve uyum konuları büyük önem taşır. Yazılım danışmanları, işletmelerin güvenlik gereksinimlerini belirler ve uygun güvenlik önlemlerini uygular.\r\n    </li>\r\n</ul>\r\n\r\n<h6>Bizim Hizmetlerimiz:</h6>\r\n\r\n<p>Şirketimiz, yazılım danışmanlığı ve strateji alanında uzmanlaşmış bir ekiple, işletmelerin dijital dönüşüm süreçlerinde yanlarında yer alır. İhtiyaçlarınıza özel olarak geliştirilmiş çözümler sunar, işletmenizin dijital potansiyelini maksimize etmek için stratejik bir yaklaşım benimseriz.</p>\r\n\r\n<p>İşletmenizin dijital geleceğini şekillendirmek ve rekabet avantajı elde etmek için bize bugün katılın!</p>", "subdescription": "İşletmenizin Dijital Dönüşümünü Yönlendirin", "created_at": "2024-05-11T14:28:50.237Z"}}]
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-05-11T13:14:40.841Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Programlama Dilleri",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2024-05-11T13:14:47.706Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Web Geliştirme",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2024-05-11T13:14:56.486Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Veritabanları",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2024-05-11T13:15:03.604Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Makine",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2024-05-11T13:15:09.309Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Veri Bilimi ve Veri Analitiği",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2024-05-11T13:15:15.725Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Mobil Uygulama Geliştirme",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2024-05-11T13:15:23.152Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Oyun Geliştirme",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2024-05-11T13:15:29.327Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Sistem Programlama",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2024-05-11T13:15:35.245Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "Ağ Programlama ve Siber Güvenlik",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2024-05-11T13:15:42.205Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "Yazılım Mimarisi ve Tasarımı",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2024-05-11T13:15:48.599Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Yazılım Testi ve Kalite Güvencesi",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2024-05-11T13:15:55.892Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "DevOps ve Sürekli Entegrasyon/Sürekli Dağıtım (CI/CD)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2024-05-11T13:16:07.451Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "Bulut Bilişim ve Sistem Yönetimi",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2024-05-11T13:16:13.224Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "14",
+            "object_repr": "Microservices ve Servis Odaklı Mimariler",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2024-05-11T13:16:19.322Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "15",
+            "object_repr": "Blockchain ve Kripto Paralar",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2024-05-11T13:16:24.554Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "16",
+            "object_repr": "Web Güvenliği ve Ethical Hacking",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2024-05-11T13:16:32.956Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "17",
+            "object_repr": "Nesnelerin İnterneti (IoT) ve Gömülü Sistemler",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2024-05-11T13:16:37.847Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "18",
+            "object_repr": "Veri Tabanlı Uygulama Geliştirme",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2024-05-11T13:16:45.835Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "19",
+            "object_repr": "Yazılım Geliştirme Araçları ve Teknikler",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2024-05-11T13:16:51.879Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "20",
+            "object_repr": "Yazılım Endüstrisi Haberleri ve Trendler",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2024-05-11T13:17:41.170Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Python",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2024-05-11T13:17:50.740Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Django",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2024-05-11T13:17:53.483Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Flask",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2024-05-11T13:17:57.992Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "JavaScript",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2024-05-11T13:18:03.310Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "React",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2024-05-11T13:18:09.333Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "6",
+            "object_repr": "Angular",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2024-05-11T13:18:16.033Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "7",
+            "object_repr": "Vue.js",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2024-05-11T13:18:21.597Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "8",
+            "object_repr": "Node.js",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2024-05-11T13:18:26.726Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "9",
+            "object_repr": "HTML5",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2024-05-11T13:18:31.556Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "10",
+            "object_repr": "CSS3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2024-05-11T13:18:38.060Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "11",
+            "object_repr": "Frontend Development",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2024-05-11T13:18:45.114Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "12",
+            "object_repr": "Backend Development",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2024-05-11T13:18:51.312Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "13",
+            "object_repr": "Web Development Tools",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2024-05-11T13:18:56.773Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "14",
+            "object_repr": "Data Science",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2024-05-11T13:19:02.875Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "15",
+            "object_repr": "Machine Learning",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2024-05-11T13:19:08.925Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "16",
+            "object_repr": "Artificial Intelligence",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2024-05-11T13:19:15.448Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "17",
+            "object_repr": "Deep Learning",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2024-05-11T13:19:20.735Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "18",
+            "object_repr": "Natural Language Processing",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2024-05-11T13:19:26.310Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "19",
+            "object_repr": "Computer Vision",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2024-05-11T13:19:32.110Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "20",
+            "object_repr": "Data Analysis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2024-05-11T13:19:38.554Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "21",
+            "object_repr": "Data Visualization",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2024-05-11T13:19:43.426Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "22",
+            "object_repr": "Database Management",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2024-05-11T13:19:47.784Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "23",
+            "object_repr": "SQL",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2024-05-11T13:19:53.766Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "24",
+            "object_repr": "NoSQL",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2024-05-11T13:19:59.062Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "25",
+            "object_repr": "ORM",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2024-05-11T13:20:04.506Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "26",
+            "object_repr": "Android",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2024-05-11T13:20:09.421Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "27",
+            "object_repr": "iOS",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2024-05-11T13:20:14.395Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "28",
+            "object_repr": "Swift",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2024-05-11T13:20:19.002Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "29",
+            "object_repr": "Kotlin",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2024-05-11T13:20:27.221Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "30",
+            "object_repr": "Flutter",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2024-05-11T13:20:32.546Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "31",
+            "object_repr": "Flutter",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2024-05-11T13:20:39.018Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "32",
+            "object_repr": "Unreal Engine",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2024-05-11T13:20:44.737Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "33",
+            "object_repr": "System Programming",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 54,
+        "fields": {
+            "action_time": "2024-05-11T13:20:49.239Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "34",
+            "object_repr": "Linux",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 55,
+        "fields": {
+            "action_time": "2024-05-11T13:20:53.958Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "35",
+            "object_repr": "Shell Scripting",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 56,
+        "fields": {
+            "action_time": "2024-05-11T13:21:00.098Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "36",
+            "object_repr": "Network Programming",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 57,
+        "fields": {
+            "action_time": "2024-05-11T13:21:04.551Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "37",
+            "object_repr": "Cybersecurity",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 58,
+        "fields": {
+            "action_time": "2024-05-11T13:21:10.775Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "38",
+            "object_repr": "DevOps",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 59,
+        "fields": {
+            "action_time": "2024-05-11T13:21:15.940Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "39",
+            "object_repr": "AWS",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 60,
+        "fields": {
+            "action_time": "2024-05-11T13:21:20.800Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "40",
+            "object_repr": "Azure",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 61,
+        "fields": {
+            "action_time": "2024-05-11T13:21:26.514Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "41",
+            "object_repr": "Microservices",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 62,
+        "fields": {
+            "action_time": "2024-05-11T13:21:32.540Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "42",
+            "object_repr": "Docker",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 63,
+        "fields": {
+            "action_time": "2024-05-11T13:21:37.001Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "43",
+            "object_repr": "Kubernetes",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 64,
+        "fields": {
+            "action_time": "2024-05-11T13:21:46.539Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "44",
+            "object_repr": "Embedded Systems",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 65,
+        "fields": {
+            "action_time": "2024-05-11T13:21:54.321Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "45",
+            "object_repr": "Git",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 66,
+        "fields": {
+            "action_time": "2024-05-11T13:22:00.401Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "46",
+            "object_repr": "GitHub",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 67,
+        "fields": {
+            "action_time": "2024-05-11T13:22:04.608Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "47",
+            "object_repr": "GitLab",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 68,
+        "fields": {
+            "action_time": "2024-05-11T13:22:09.996Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "48",
+            "object_repr": "Design Patterns",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 69,
+        "fields": {
+            "action_time": "2024-05-11T13:22:15.338Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "49",
+            "object_repr": "Scrum",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 70,
+        "fields": {
+            "action_time": "2024-05-11T13:22:21.024Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "50",
+            "object_repr": "Testing",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 71,
+        "fields": {
+            "action_time": "2024-05-11T13:22:26.258Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "51",
+            "object_repr": "Unit Testing",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 72,
+        "fields": {
+            "action_time": "2024-05-11T13:22:31.416Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "52",
+            "object_repr": "Integration Testing",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 73,
+        "fields": {
+            "action_time": "2024-05-11T13:22:37.079Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "53",
+            "object_repr": "Code Quality",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 74,
+        "fields": {
+            "action_time": "2024-05-11T13:22:42.651Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "54",
+            "object_repr": "Logging",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 75,
+        "fields": {
+            "action_time": "2024-05-11T13:22:50.733Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "55",
+            "object_repr": "Documentation",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 76,
+        "fields": {
+            "action_time": "2024-05-11T13:27:33.352Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 77,
+        "fields": {
+            "action_time": "2024-05-11T13:28:22.645Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 78,
+        "fields": {
+            "action_time": "2024-05-11T13:36:55.626Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 79,
+        "fields": {
+            "action_time": "2024-05-11T13:41:05.266Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 80,
+        "fields": {
+            "action_time": "2024-05-11T13:42:42.224Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 81,
+        "fields": {
+            "action_time": "2024-05-11T13:47:45.794Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 82,
+        "fields": {
+            "action_time": "2024-05-11T13:49:38.390Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 83,
+        "fields": {
+            "action_time": "2024-05-11T13:51:19.807Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 84,
+        "fields": {
+            "action_time": "2024-05-11T13:54:00.434Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 85,
+        "fields": {
+            "action_time": "2024-05-11T13:55:25.410Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 86,
+        "fields": {
+            "action_time": "2024-05-11T13:59:34.393Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "Bulut Bilişim ve Sistem Yönetimi",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 87,
+        "fields": {
+            "action_time": "2024-05-11T14:03:32.484Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "Nesnelerin İnterneti Nedir?",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 88,
+        "fields": {
+            "action_time": "2024-05-11T14:04:14.279Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 89,
+        "fields": {
+            "action_time": "2024-05-11T14:13:13.251Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 90,
+        "fields": {
+            "action_time": "2024-05-11T14:21:14.615Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 91,
+        "fields": {
+            "action_time": "2024-05-11T14:25:35.411Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 92,
+        "fields": {
+            "action_time": "2024-05-11T14:28:50.238Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 93,
+        "fields": {
+            "action_time": "2024-05-11T14:33:20.509Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 94,
+        "fields": {
+            "action_time": "2024-05-11T14:34:45.897Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 95,
+        "fields": {
+            "action_time": "2024-05-11T14:35:25.410Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 96,
+        "fields": {
+            "action_time": "2024-05-11T14:36:01.188Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 97,
+        "fields": {
+            "action_time": "2024-05-11T14:37:05.141Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 98,
+        "fields": {
+            "action_time": "2024-05-11T14:37:23.199Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 99,
+        "fields": {
+            "action_time": "2024-05-11T14:37:39.739Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0130\\u00e7erik\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 100,
+        "fields": {
+            "action_time": "2024-05-11T14:50:37.226Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "Bulut Bilişim ve Sistem Yönetimi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"name\": \"comment\", \"object\": \"Comment by hako on Bulut Bili\\u015fim ve Sistem Y\\u00f6netimi\", \"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 6,
+            "codename": "add_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 6,
+            "codename": "change_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 6,
+            "codename": "delete_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 6,
+            "codename": "view_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add blog post",
+            "content_type": 7,
+            "codename": "add_blogpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change blog post",
+            "content_type": 7,
+            "codename": "change_blogpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete blog post",
+            "content_type": 7,
+            "codename": "delete_blogpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view blog post",
+            "content_type": 7,
+            "codename": "view_blogpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add category",
+            "content_type": 8,
+            "codename": "add_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change category",
+            "content_type": 8,
+            "codename": "change_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete category",
+            "content_type": 8,
+            "codename": "delete_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view category",
+            "content_type": 8,
+            "codename": "view_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add tag",
+            "content_type": 9,
+            "codename": "add_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change tag",
+            "content_type": 9,
+            "codename": "change_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete tag",
+            "content_type": 9,
+            "codename": "delete_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view tag",
+            "content_type": 9,
+            "codename": "view_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add comment",
+            "content_type": 10,
+            "codename": "add_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change comment",
+            "content_type": 10,
+            "codename": "change_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete comment",
+            "content_type": 10,
+            "codename": "delete_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view comment",
+            "content_type": 10,
+            "codename": "view_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add Endüstri",
+            "content_type": 11,
+            "codename": "add_industry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change Endüstri",
+            "content_type": 11,
+            "codename": "change_industry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete Endüstri",
+            "content_type": 11,
+            "codename": "delete_industry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view Endüstri",
+            "content_type": 11,
+            "codename": "view_industry"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "Blogger",
+            "permissions": [
+                25,
+                26,
+                27,
+                28,
+                41,
+                42,
+                43,
+                44
+            ]
+        }
+    },
+
+    {
+        "model": "blog.customuser",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$59OIfQ1qdRZ0Xottrjx5U0$8z49gIeYlpp2qigOOBxDIxFgJGJ/jk2e4LUwoDaIB6A=",
+            "last_login": "2024-05-11T13:12:45.348Z",
+            "is_superuser": true,
+            "username": "hako",
+            "first_name": "",
+            "last_name": "",
+            "email": "hako@hako.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-05-11T13:08:16.714Z",
+            "is_blogger": false,
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "blog.customuser",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$59OIfQ1qdRZ0Xottrjx5U0$8z49gIeYlpp2qigOOBxDIxFgJGJ/jk2e4LUwoDaIB6A=",
+            "last_login": "2024-05-11T13:12:28.919Z",
+            "is_superuser": false,
+            "username": "test",
+            "first_name": "",
+            "last_name": "",
+            "email": "test@test.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-05-11T13:11:56.475Z",
+            "is_blogger": false,
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 1,
+        "fields": {
+            "name": "Programlama Dilleri"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 2,
+        "fields": {
+            "name": "Web Geliştirme"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 3,
+        "fields": {
+            "name": "Veritabanları"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 4,
+        "fields": {
+            "name": "Makine"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 5,
+        "fields": {
+            "name": "Veri Bilimi ve Veri Analitiği"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 6,
+        "fields": {
+            "name": "Mobil Uygulama Geliştirme"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 7,
+        "fields": {
+            "name": "Oyun Geliştirme"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 8,
+        "fields": {
+            "name": "Sistem Programlama"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 9,
+        "fields": {
+            "name": "Ağ Programlama ve Siber Güvenlik"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 10,
+        "fields": {
+            "name": "Yazılım Mimarisi ve Tasarımı"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 11,
+        "fields": {
+            "name": "Yazılım Testi ve Kalite Güvencesi"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 12,
+        "fields": {
+            "name": "DevOps ve Sürekli Entegrasyon/Sürekli Dağıtım (CI/CD)"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 13,
+        "fields": {
+            "name": "Bulut Bilişim ve Sistem Yönetimi"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 14,
+        "fields": {
+            "name": "Microservices ve Servis Odaklı Mimariler"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 15,
+        "fields": {
+            "name": "Blockchain ve Kripto Paralar"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 16,
+        "fields": {
+            "name": "Web Güvenliği ve Ethical Hacking"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 17,
+        "fields": {
+            "name": "Nesnelerin İnterneti (IoT) ve Gömülü Sistemler"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 18,
+        "fields": {
+            "name": "Veri Tabanlı Uygulama Geliştirme"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 19,
+        "fields": {
+            "name": "Yazılım Geliştirme Araçları ve Teknikler"
+        }
+    },
+    {
+        "model": "blog.category",
+        "pk": 20,
+        "fields": {
+            "name": "Yazılım Endüstrisi Haberleri ve Trendler"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 1,
+        "fields": {
+            "name": "Python"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 2,
+        "fields": {
+            "name": "Django"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 3,
+        "fields": {
+            "name": "Flask"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 4,
+        "fields": {
+            "name": "JavaScript"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 5,
+        "fields": {
+            "name": "React"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 6,
+        "fields": {
+            "name": "Angular"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 7,
+        "fields": {
+            "name": "Vue.js"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 8,
+        "fields": {
+            "name": "Node.js"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 9,
+        "fields": {
+            "name": "HTML5"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 10,
+        "fields": {
+            "name": "CSS3"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 11,
+        "fields": {
+            "name": "Frontend Development"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 12,
+        "fields": {
+            "name": "Backend Development"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 13,
+        "fields": {
+            "name": "Web Development Tools"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 14,
+        "fields": {
+            "name": "Data Science"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 15,
+        "fields": {
+            "name": "Machine Learning"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 16,
+        "fields": {
+            "name": "Artificial Intelligence"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 17,
+        "fields": {
+            "name": "Deep Learning"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 18,
+        "fields": {
+            "name": "Natural Language Processing"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 19,
+        "fields": {
+            "name": "Computer Vision"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 20,
+        "fields": {
+            "name": "Data Analysis"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 21,
+        "fields": {
+            "name": "Data Visualization"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 22,
+        "fields": {
+            "name": "Database Management"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 23,
+        "fields": {
+            "name": "SQL"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 24,
+        "fields": {
+            "name": "NoSQL"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 25,
+        "fields": {
+            "name": "ORM"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 26,
+        "fields": {
+            "name": "Android"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 27,
+        "fields": {
+            "name": "iOS"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 28,
+        "fields": {
+            "name": "Swift"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 29,
+        "fields": {
+            "name": "Kotlin"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 30,
+        "fields": {
+            "name": "Flutter"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 31,
+        "fields": {
+            "name": "Flutter"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 32,
+        "fields": {
+            "name": "Unreal Engine"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 33,
+        "fields": {
+            "name": "System Programming"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 34,
+        "fields": {
+            "name": "Linux"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 35,
+        "fields": {
+            "name": "Shell Scripting"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 36,
+        "fields": {
+            "name": "Network Programming"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 37,
+        "fields": {
+            "name": "Cybersecurity"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 38,
+        "fields": {
+            "name": "DevOps"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 39,
+        "fields": {
+            "name": "AWS"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 40,
+        "fields": {
+            "name": "Azure"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 41,
+        "fields": {
+            "name": "Microservices"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 42,
+        "fields": {
+            "name": "Docker"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 43,
+        "fields": {
+            "name": "Kubernetes"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 44,
+        "fields": {
+            "name": "Embedded Systems"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 45,
+        "fields": {
+            "name": "Git"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 46,
+        "fields": {
+            "name": "GitHub"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 47,
+        "fields": {
+            "name": "GitLab"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 48,
+        "fields": {
+            "name": "Design Patterns"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 49,
+        "fields": {
+            "name": "Scrum"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 50,
+        "fields": {
+            "name": "Testing"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 51,
+        "fields": {
+            "name": "Unit Testing"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 52,
+        "fields": {
+            "name": "Integration Testing"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 53,
+        "fields": {
+            "name": "Code Quality"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 54,
+        "fields": {
+            "name": "Logging"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 55,
+        "fields": {
+            "name": "Documentation"
+        }
+    },
+    {
+        "model": "blog.blogpost",
+        "pk": 1,
+        "fields": {
+            "title": "Yazılım Mimarisi ve Tasarımı: Temel İlkeler ve Yaklaşımlar",
+            "content": "<p>\r\n    <strong>Yazılım geliştirme sürecinde, yazılım mimarisi ve tasarımı, başarılı bir proje için temel unsurlardan biridir. Bu yazıda, yazılım mimarisi ve tasarımının temel ilkelerini ve popüler yaklaşımlarını ele alacağız.</strong>\r\n</p>\r\n\r\n<p>\r\n    <strong>Yazılım Mimarisi Nedir?</strong><br>\r\n    Yazılım mimarisi, bir yazılım sisteminin yüksek seviyeli yapısını, bileşenlerini ve ilişkilerini tanımlayan kavramsal bir modeldir. Bir binanın mimari tasarımı gibi, yazılım mimarisi de bir sistemin temel altyapısını oluşturur ve geliştirme sürecinde rehberlik eder.\r\n</p>\r\n\r\n<p>\r\n    <strong>Yazılım Tasarımı İlkeleri:</strong><br>\r\n    <ul>\r\n        <li>Modülerlik: Yazılımın parçalara ayrılabilir ve bağımsız modüller olarak geliştirilebilir olması.</li>\r\n        <li>Esneklik: Değişen gereksinimlere kolayca uyum sağlayabilme yeteneği.</li>\r\n        <li>Yeniden Kullanılabilirlik: Kodun tekrar kullanılabilir olması, böylece gereksiz tekrarlar önlenir.</li>\r\n        <li>Bileşen Odaklılık: Yazılımın bağımsız bileşenlere ayrılması ve bir araya getirilerek karmaşık sistemlerin oluşturulması.</li>\r\n        <li>Ayrıştırma: Karmaşık sistemlerin küçük, yönetilebilir parçalara bölünmesi.</li>\r\n        <li>Uyumlu: Farklı bileşenlerin birlikte uyumlu çalışabilmesi.</li>\r\n    </ul>\r\n</p>\r\n\r\n<p>\r\n    <strong>Yazılım Tasarımı Yaklaşımları:</strong><br>\r\n    <ul>\r\n        <li>Nesne Yönelimli Tasarım (OOD): Nesnelerin bir araya gelerek karmaşık sistemlerin modellenmesi ve uygulanması.</li>\r\n        <li>Bileşen Tabanlı Tasarım: Bağımsız bileşenlerin yeniden kullanılabilir şekilde tasarlanması ve bir araya getirilerek sistemlerin oluşturulması.</li>\r\n        <li>Servis Odaklı Mimarisi (SOA): Hizmet odaklı tasarımın benimsendiği bir yaklaşım, bu yaklaşımda hizmetler birbirleriyle bağımsız olarak iletişim kurarlar.</li>\r\n        <li>Mikroservis Mimarisi: Küçük, bağımsız hizmetlerin bir araya gelerek bir sistem oluşturduğu bir mimari yaklaşım.</li>\r\n    </ul>\r\n</p>\r\n\r\n<p>\r\n    <strong>Sonuç:</strong><br>\r\n    Yazılım mimarisi ve tasarımı, bir yazılım projesinin başarılı bir şekilde hayata geçirilmesinde kritik öneme sahiptir. Temel ilkelerin ve popüler yaklaşımların anlaşılması, geliştiricilere daha esnek, modüler ve yeniden kullanılabilir yazılım sistemleri oluşturma yeteneği kazandırır. Bu yazıda ele aldığımız konular, yazılım geliştirme sürecinde temel bir rehberlik sağlayacaktır.\r\n</p>",
+            "author": 1,
+            "created_at": "2024-05-11T13:27:33.348Z",
+            "cover_image": "blog_covers/softwareart.png",
+            "category": 10,
+            "tags": [
+                48,
+                12
+            ]
+        }
+    },
+    {
+        "model": "blog.blogpost",
+        "pk": 2,
+        "fields": {
+            "title": "Yazılım Geliştirme Sürecinde DevOps ve CI/CD: Dönüşümün Anahtarı",
+            "content": "<p>\r\n\r\n\r\n    <p>\r\n        Yazılım geliştirme dünyası, sürekli değişen gereksinimlere hızla cevap verebilmek için sürekli olarak evriliyor. Bu evrimin merkezinde ise DevOps ve Sürekli Entegrasyon/Sürekli Dağıtım (CI/CD) gibi yaklaşımlar bulunuyor. Bu yazıda, DevOps ve CI/CD'nin yazılım geliştirme sürecindeki rolünü, sağladığı avantajları ve uygulama ipuçlarını ele alacağız.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>DevOps: Kavram ve Önemi</strong><br>\r\n        DevOps, yazılım geliştirme ve IT operasyonları arasındaki işbirliğini ve etkileşimi güçlendiren bir kültür, hareket ve pratikler bütünüdür. Geleneksel olarak, geliştirme ve operasyon ekipleri birbirinden izole çalışırken, DevOps bu duvarları yıkmayı hedefler. Bu sayede, yazılımın hızlı bir şekilde teslim edilmesi, hataların azaltılması ve işletme değerinin artırılması sağlanır.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>CI/CD: Sürekli Entegrasyon ve Sürekli Dağıtım</strong><br>\r\n        CI/CD, yazılım geliştirme sürecinde tekrarlanabilirlik, otomasyon ve hızı vurgulayan bir yaklaşımdır. Sürekli Entegrasyon (CI), yazılımın sürekli olarak birleştirilmesini ve otomatik olarak test edilmesini sağlar. Sürekli Dağıtım (CD) ise yazılımın sürekli olarak canlı ortama dağıtılmasını, test edilmesini ve hatta otomatik olarak kullanıma alınmasını hedefler. Bu süreçler, hızlı geri bildirim döngüsü sağlayarak, yazılımın hızlı bir şekilde ve güvenilir bir şekilde teslim edilmesini sağlar.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>DevOps ve CI/CD'nin Faydaları:</strong><br>\r\n        <ul>\r\n            <li>Hızlı Geri Bildirim: Kod değişiklikleri hızlı bir şekilde entegre edilir ve otomatik olarak test edilir, böylece hataların erken aşamalarda tespit edilmesi sağlanır.</li>\r\n            <li>Sürekli İyileştirme: Sürekli geri bildirim ve sürekli entegrasyon/düzeltme süreçleri, sürekli iyileştirmeyi teşvik eder.</li>\r\n            <li>Daha Yüksek Kalite: Otomatik testler ve tekrarlanabilir süreçler, yazılım kalitesini artırır.</li>\r\n            <li>Daha Az Hata: Hatalı kod değişiklikleri otomatik olarak tespit edilir ve geri alınır, böylece üretim ortamına gitme olasılığı azalır.</li>\r\n            <li>Hızlı Dağıtım: Yazılımın hızlı ve güvenli bir şekilde canlı ortama dağıtılması sağlanır, işletme değeri daha hızlı elde edilir.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Uygulama İpuçları:</strong><br>\r\n        <ul>\r\n            <li>Kültürü Önemseyin: DevOps sadece araçlar ve süreçlerle ilgili değildir, aynı zamanda bir kültür ve değerler bütünüdür. İşbirliği, iletişim ve sürekli öğrenmeyi teşvik eden bir ortam oluşturun.</li>\r\n            <li>Otomasyonu Kullanın: Tekrar eden görevleri otomatikleştirin ve sürekli entegrasyon/düzeltme süreçlerini otomatik hale getirin.</li>\r\n            <li>Geri Bildirim Döngüsünü Kısaltın: Hızlı geri bildirim almak için test süreçlerini optimize edin ve otomatikleştirin.</li>\r\n            <li>İşletme İle Yakın Çalışın: Yazılım geliştirme sürecini işletme ihtiyaçlarına uygun şekilde şekillendirin ve sürekli olarak geri bildirim alın.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sonuç:</strong><br>\r\n        DevOps ve CI/CD, yazılım geliştirme sürecini dönüştüren ve modern bir yaklaşım benimseyen organizasyonlar için bir zorunluluktur. Bu yaklaşımlar, hız, kalite ve işletme değeri sağlayarak rekabet avantajı sağlar. Bu yazıda ele aldığımız konular, yazılım geliştirme sürecinde DevOps ve CI/CD'nin nasıl uygulanabileceği konusunda bir rehber sağlayacaktır.\r\n    </p>\r\n</p>",
+            "author": 1,
+            "created_at": "2024-05-11T13:36:55.624Z",
+            "cover_image": "blog_covers/devops.png",
+            "category": 12,
+            "tags": [
+                38,
+                39,
+                40,
+                42,
+                43
+            ]
+        }
+    },
+    {
+        "model": "blog.blogpost",
+        "pk": 3,
+        "fields": {
+            "title": "Sistem Programlama: Bilgisayarın Derinliklerine Yolculuk",
+            "content": "<p>\r\n \r\n    <p>\r\n        Sistem programlama, bilgisayar sistemlerinin temellerini anlamak ve yönetmek için geliştirilen yazılım uygulamalarını kapsayan kapsamlı bir disiplindir. Bu yazıda, sistem programlamanın ne olduğunu, nasıl çalıştığını ve neden önemli olduğunu inceleyeceğiz.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sistem Programlama Nedir?</strong><br>\r\n        Sistem programlama, işletim sistemleri, sürücüler, ağ protokolleri ve donanım arasındaki iletişimi yöneten yazılım bileşenlerinin geliştirilmesini içerir. Bu bileşenler, bilgisayarın kaynaklarını etkin bir şekilde kullanmak, performansı artırmak ve güvenliği sağlamak için kritik öneme sahiptir.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Neden Önemlidir?</strong><br>\r\n        Sistem programlama, bilgisayar sistemlerinin güvenilirliği, performansı ve güvenliği için temel bir rol oynar. Özellikle, işletim sistemleri gibi temel bileşenler, bilgisayar kaynaklarını yönetir, uygulamalar arasındaki etkileşimi kolaylaştırır ve sistem güvenliğini sağlar. Ayrıca, sürücüler ve ağ protokolleri gibi diğer bileşenler, donanımın ve ağ iletişiminin verimli bir şekilde çalışmasını sağlar.\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sistem Programlama Uygulamaları:</strong><br>\r\n        <ul>\r\n            <li>İşletim Sistemleri Geliştirme: İşletim sistemleri, bilgisayar kaynaklarını yöneten ve uygulamalar arasında iletişimi sağlayan temel sistem yazılımlarıdır. Sistem programlama, işletim sistemlerinin geliştirilmesi ve özelleştirilmesinde kullanılır.</li>\r\n            <li>Sürücü Geliştirme: Sürücüler, bilgisayarın donanım bileşenleriyle iletişim kuran yazılım bileşenleridir. Sistem programlama, sürücülerin geliştirilmesi ve uyumlu hale getirilmesi için kullanılır.</li>\r\n            <li>Ağ Programlama: Ağ protokolleri ve iletişim yazılımları, bilgisayarların ağlar arası iletişimini sağlar. Sistem programlama, ağ protokolleri ve iletişim yazılımlarının geliştirilmesi ve optimize edilmesi için kullanılır.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sistem Programlama Araçları ve Dilleri:</strong><br>\r\n        <ul>\r\n            <li>C ve C++ gibi düşük seviye diller: Bellek yönetimi, donanım erişimi ve performans optimizasyonu gibi görevler için idealdir.</li>\r\n            <li>Assembly dili: Doğrudan donanım erişimi sağlar ve performans açısından kritik uygulamalar için tercih edilir.</li>\r\n            <li>Rust gibi güvenli diller: Bellek güvenliği ve paralel programlama için idealdir.</li>\r\n        </ul>\r\n    </p>\r\n\r\n    <p>\r\n        <strong>Sonuç:</strong><br>\r\n        Sistem programlama, bilgisayar sistemlerinin temellerini anlamak ve yönetmek için kritik öneme sahip bir disiplindir. İşletim sistemleri, sürücüler ve ağ protokolleri gibi temel bileşenlerin geliştirilmesi ve optimize edilmesi, bilgisayar sistemlerinin güvenilirliği, performansı ve güvenliği için hayati öneme sahiptir. Bu yazıda ele aldığımız konular, sistem programlamanın önemini ve uygulamalarını daha iyi anlamanıza yardımcı olacaktır.\r\n    </p>\r\n</p>",
+            "author": 1,
+            "created_at": "2024-05-11T13:41:05.263Z",
+            "cover_image": "blog_covers/system-programming.jpg",
+            "category": 8,
+            "tags": [
+                33,
+                35,
+                36
+            ]
+        }
+    },
+    {
+        "model": "blog.blogpost",
+        "pk": 4,
+        "fields": {
+            "title": "Bulut Bilişim ve Sistem Yönetimi",
+            "content": "<p>\r\n    <strong>Bulut Bilişim ve Sistem Yönetimi</strong>\r\n</p>\r\n\r\n<p>\r\n    Bulut bilişim, günümüzün en önemli teknolojik trendlerinden biridir ve işletmelerin veri depolama, işlem gücü ve uygulama dağıtımı gibi ihtiyaçlarını karşılamak için yaygın olarak kullanılmaktadır. Bu yazıda, bulut bilişimin temel kavramlarını ve sistem yönetimi açısından önemini ele alacağız.\r\n</p>\r\n\r\n<p>\r\n    <strong>Bulut Bilişim Nedir?</strong><br>\r\n    Bulut bilişim, internet üzerinden paylaşılan bilgi, kaynak ve altyapıya erişim sağlayan bir teknoloji modelidir. Geleneksel olarak, işletmeler kendi sunucularını ve veri merkezlerini yönetirken, bulut bilişim hizmetleri sağlayıcılarından bu hizmetleri kiralayarak ihtiyaçlarını karşılarlar.\r\n</p>\r\n\r\n<p>\r\n    <strong>Sistem Yönetimi ve Bulut Bilişim</strong><br>\r\n    Sistem yönetimi, bir organizasyonun BT altyapısını yönetme ve işletme süreçlerini denetleme sürecidir. Bulut bilişim, sistem yönetimi için bir dizi avantaj sunar. Bunlar arasında:\r\n    <ul>\r\n        <li><strong>Elastiklik:</strong> Bulut bilişim, ihtiyaçlar arttıkça veya azaldıkça işletmelerin kaynakları esnek bir şekilde ölçeklendirmesine olanak tanır.</li>\r\n        <li><strong>Yedekleme ve Kurtarma:</strong> Bulut tabanlı yedekleme ve kurtarma çözümleri, veri kaybını önler ve iş sürekliliğini sağlar.</li>\r\n        <li><strong>Güvenlik:</strong> Güvenlik uzmanları tarafından yönetilen bulut bilişim hizmetleri, verilerin korunmasını ve uyumluluğun sağlanmasını kolaylaştırır.</li>\r\n        <li><strong>Yönetilen Hizmetler:</strong> Bulut sağlayıcıları, altyapıyı yönetme ve bakımı yapma gibi görevleri üstlenerek sistem yöneticilerine zaman kazandırır.</li>\r\n    </ul>\r\n</p>\r\n\r\n<p>\r\n    <strong>Sonuç:</strong><br>\r\n    Bulut bilişim, işletmelerin verimliliği artırmak, maliyetleri düşürmek ve rekabet avantajı elde etmek için güçlü bir araçtır. Sistem yönetimi perspektifinden bakıldığında, bulut bilişim hizmetleri, BT altyapısının esnekliğini artırır, veri güvenliğini sağlar ve işletmelerin daha verimli çalışmasını sağlar.\r\n</p>",
+            "author": 1,
+            "created_at": "2024-05-11T13:59:34.391Z",
+            "cover_image": "blog_covers/Cloud_computing.png",
+            "category": 13,
+            "tags": [
+                40,
+                42,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "model": "blog.blogpost",
+        "pk": 5,
+        "fields": {
+            "title": "Nesnelerin İnterneti Nedir?",
+            "content": "<p>\r\n    Nesnelerin İnterneti (IoT), fiziksel cihazların internete bağlanması ve birbirleriyle iletişim kurması üzerine kurulu bir teknoloji alanıdır. Gömülü sistemler ise bu cihazların içine yerleştirilen bilgisayar sistemleridir. Bu yazıda, IoT ve gömülü sistemlerin temel kavramlarını ve birbirleriyle olan ilişkisini ele alacağız.\r\n</p>\r\n\r\n<p>\r\n    <strong>Nesnelerin İnterneti Nedir?</strong><br>\r\n    Nesnelerin İnterneti, günlük hayatta kullanılan her türlü cihazın (akıllı telefonlar, ev aletleri, araçlar, sağlık cihazları vb.) internete bağlanmasını ve veri alışverişi yapmasını sağlayan bir teknoloji alanıdır. IoT cihazları genellikle sensörler, işlemciler ve iletişim modülleri gibi bileşenler içerir.\r\n</p>\r\n\r\n<p>\r\n    <strong>Gömülü Sistemler Nedir?</strong><br>\r\n    Gömülü sistemler, genellikle tek bir görevi yerine getirmek üzere optimize edilmiş bilgisayar sistemleridir. Bu sistemler, içine yerleştirildikleri cihazın temel işlevlerini gerçekleştirmek için tasarlanır. Örneğin, bir araba motor kontrol ünitesi veya bir akıllı termostat birer gömülü sistemdir.\r\n</p>\r\n\r\n<p>\r\n    <strong>IoT ve Gömülü Sistemler Arasındaki İlişki</strong><br>\r\n    IoT cihazları genellikle gömülü sistemler içerir. Sensörlerden gelen verileri işleyen, kararlar alan ve iletişim kuran küçük bilgisayarlar içeren IoT cihazları, bir tür gömülü sistemdir. Gömülü sistemler, IoT ekosisteminin temel yapı taşlarını oluşturur.\r\n</p>\r\n\r\n<p>\r\n    <strong>Sonuç:</strong><br>\r\n    Nesnelerin İnterneti (IoT) ve gömülü sistemler, günümüzün giderek daha bağlantılı ve akıllı dünyasının temelini oluşturur. IoT cihazları, hayatımızı kolaylaştırmak, verimliliği artırmak ve yeni iş fırsatları yaratmak için gömülü sistemlerin gücünden yararlanır. Bu yazıda ele aldığımız konular, IoT ve gömülü sistemlerin temelini anlamanıza ve bu alanda daha fazla keşif yapmanıza yardımcı olacaktır.\r\n</p>",
+            "author": 1,
+            "created_at": "2024-05-11T14:03:32.482Z",
+            "cover_image": "blog_covers/iot.jpg",
+            "category": 17,
+            "tags": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 1,
+        "fields": {
+            "blog_post": 4,
+            "author": 1,
+            "content": "Harika bir blog , çok şey öğrendim.",
+            "created_at": "2024-05-11T14:49:28.844Z"
+        }
+    },
+    {
+        "model": "blog.industry",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "name": "Bulut Bilişim ve Altyapı Hizmetleri: İşinizi Geleceğe Taşıyın",
+            "image": "industry_images/bulut-bilisim-header.jpg",
+            "icon_class": "fas fa fa-cloud",
+            "content": "<p>Bulut bilişim, işletmelerin veri depolama, işlem gücü ve uygulama erişimini internet üzerinden sağlayan bir teknoloji çözümüdür. Geleneksel yerel sunucu tabanlı sistemlerden buluta geçiş, birçok işletmeye daha esnek, güvenilir ve ölçeklenebilir bir altyapı sunar. Bulut bilişim ve altyapı hizmetleri, işletmelerin rekabet avantajı elde etmesine, maliyetleri azaltmasına ve iş süreçlerini optimize etmesine yardımcı olur.</p>\r\n\r\n<h6>Avantajları:</h6>\r\n\r\n<ul>\r\n    <li>\r\n        <strong>Ölçeklenebilirlik ve Esneklik:</strong> Bulut bilişim, işletmelerin iş yüklerini artırıp azaltmasına göre kolayca ölçeklendirilebilir. Mevsimsel taleplere veya beklenmedik iş yüklerine anında yanıt verebilir.\r\n    </li>\r\n    <li>\r\n        <strong>Maliyet Tasarrufu:</strong> Geleneksel yerel sunucu altyapısına kıyasla, bulut bilişim kullanımında donanım maliyetleri ve bakım giderleri önemli ölçüde azalır. İşletmeler, yalnızca kullandıkları hizmetler için ödeme yaparlar ve kaynakları daha verimli kullanabilirler.\r\n    </li>\r\n    <li>\r\n        <strong>Yüksek Güvenlik:</strong> Güvenlik, bulut bilişim sağlayıcıları için en önemli önceliklerden biridir. Veri merkezlerindeki güvenlik önlemleri ve sıkı kimlik doğrulama yöntemleri, işletmelerin hassas verilerini korur.\r\n    </li>\r\n    <li>\r\n        <strong>Uzaktan Erişim:</strong> Bulut bilişim, çalışanların ve ekiplerin herhangi bir yerden, herhangi bir cihazdan erişim sağlamasını kolaylaştırır. Bu da esnek çalışma düzenlerini teşvik eder ve işbirliğini artırır.\r\n    </li>\r\n    <li>\r\n        <strong>Sürekli Bakım ve Güncelleme:</strong> Bulut bilişim sağlayıcıları, altyapının sürekli olarak bakımını ve güncellemesini sağlarlar. Bu sayede işletmeler, güncel kalmak ve güvenlik açıklarını en aza indirmek için ekstra kaynaklar harcamak zorunda kalmazlar.\r\n    </li>\r\n</ul>\r\n\r\n<h6>Bizim Hizmetlerimiz:</h6>\r\n\r\n<p>Şirketimiz, Bulut Bilişim ve Altyapı Hizmetleri alanında uzmanlaşmış bir ekiple, işletmelerin ihtiyaçlarına uygun çözümler sunar. Danışmanlık hizmetlerimiz, buluta geçiş stratejileri geliştirmekten, altyapı optimizasyonuna kadar geniş bir yelpazeyi kapsar. Ayrıca, bulut tabanlı uygulama geliştirme, veri yönetimi ve güvenlik hizmetleri de sunuyoruz.</p>\r\n\r\n<p>İşinizi geleceğe taşımak ve bulut avantajlarından yararlanmak için bize bugün katılın!</p>",
+            "subdescription": "İşinizi Geleceğe Taşıyın",
+            "created_at": "2024-05-11T14:21:14.614Z"
+        }
+    },
+    {
+        "model": "blog.industry",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "name": "Siber Güvenlik Çözümleri: İşletmenizi Tehditlere Karşı Koruyun",
+            "image": "industry_images/cybersecurity.jpeg",
+            "icon_class": "fas fa fa-shield",
+            "content": "<p>Günümüzde, dijital dönüşüm ile birlikte işletmelerin karşılaştığı siber tehditler giderek artmaktadır. Veri ihlalleri, kötü amaçlı yazılımlar ve çevrimiçi saldırılar, işletmeler için ciddi riskler oluşturabilir. Siber güvenlik çözümleri, bu tür tehditlere karşı koruma sağlar ve işletmelerin verilerini, sistemlerini ve itibarını korumak için kapsamlı bir yaklaşım sunar.</p>\r\n\r\n<h6>Avantajları:</h6>\r\n\r\n<ul>\r\n    <li>\r\n        <strong>Kapsamlı Koruma:</strong> Siber güvenlik çözümleri, ağ güvenliği, veri koruma, kimlik doğrulama, tehdit izleme ve güvenlik olayı yönetimi gibi alanlarda kapsamlı bir koruma sağlar. Bu sayede işletmeler, birden fazla saldırı vektörüne karşı savunma yapabilirler.\r\n    </li>\r\n    <li>\r\n        <strong>Veri Güvenliği:</strong> Hassas verilerin korunması, işletmeler için büyük önem taşır. Siber güvenlik çözümleri, veri şifreleme, erişim kontrolü ve güvenli depolama gibi teknolojilerle veri güvenliğini sağlar.\r\n    </li>\r\n    <li>\r\n        <strong>Sürekli İzleme ve Analiz:</strong> Tehditlerin hızla değiştiği bir ortamda, sürekli izleme ve tehdit analizi önemlidir. Siber güvenlik çözümleri, ağ trafiğini, günlükleri ve kullanıcı etkinliklerini izler ve anormal aktiviteleri tespit ederek hızlı bir şekilde müdahale eder.\r\n    </li>\r\n    <li>\r\n        <strong>Uçtan Uca Koruma:</strong> İşletmelerin siber güvenliği, her seviyede sağlanmalıdır. Siber güvenlik çözümleri, ağ uç noktalarından veri merkezlerine kadar geniş bir yelpazede koruma sağlar.\r\n    </li>\r\n    <li>\r\n        <strong>Yenilikçi Teknolojiler:</strong> Siber güvenlik alanında sürekli olarak yeni tehditler ve saldırı teknikleri ortaya çıkar. Siber güvenlik çözümleri, güncel ve yenilikçi teknolojilerle bu tehditlere karşı koruma sağlar.\r\n    </li>\r\n</ul>\r\n\r\n<h6>Bizim Çözümlerimiz:</h6>\r\n\r\n<p>Şirketimiz, siber güvenlik alanında uzmanlaşmış bir ekiple, işletmelerin güvenlik ihtiyaçlarına uygun çözümler sunar. Siber tehditlerin tespiti ve engellenmesinden, güvenlik açıklarının kapatılmasına kadar geniş bir yelpazede hizmetler sunuyoruz. Ayrıca, güvenlik eğitimi ve danışmanlık hizmetleri de sunarak işletmelerin güvenlik bilincini artırmaya yardımcı oluyoruz.</p>\r\n\r\n<p>İşletmenizi siber tehditlere karşı korumak ve güvenlik seviyenizi artırmak için bize bugün katılın!</p>",
+            "subdescription": "İşletmenizi Tehditlere Karşı Koruyun",
+            "created_at": "2024-05-11T14:25:35.410Z"
+        }
+    },
+    {
+        "model": "blog.industry",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "name": "Yazılım Danışmanlığı ve Strateji: İşletmenizin Dijital Dönüşümünü Yönlendirin",
+            "image": "industry_images/Yazilim_Danisman.jpeg",
+            "icon_class": "fas fa fa-terminal",
+            "content": "<p>Günümüz iş dünyasında, rekabet avantajı elde etmek ve sürdürmek için dijital dönüşüm kaçınılmaz bir gerekliliktir. Ancak, bu dönüşüm sürecinde karşılaşılan karmaşıklık ve belirsizlikler, işletmeler için zorlayıcı olabilir. İşte bu noktada, yazılım danışmanlığı ve strateji hizmetleri devreye girer, işletmelere dijital dönüşüm yolculuklarında rehberlik eder ve stratejik bir yaklaşım sunar.</p>\r\n\r\n<h6>Avantajları:</h6>\r\n\r\n<ul>\r\n    <li>\r\n        <strong>Dijital Strateji Geliştirme:</strong> Yazılım danışmanları, işletmelerin mevcut durumlarını değerlendirir, hedeflerini belirler ve uygun dijital stratejiler geliştirir. Bu stratejiler, işletmelerin kısa ve uzun vadeli hedeflerine uygun olarak şekillendirilir.\r\n    </li>\r\n    <li>\r\n        <strong>Teknoloji Seçimi ve Uygulama:</strong> İşletmeler için uygun olan teknoloji seçimi, dönüşüm sürecinin başarısı açısından kritiktir. Yazılım danışmanları, işletmelerin ihtiyaçlarına uygun teknoloji çözümlerini belirler ve uygulamaya geçirir.\r\n    </li>\r\n    <li>\r\n        <strong>İş Süreçleri ve Verimlilik:</strong> Dijital dönüşüm, iş süreçlerini yeniden şekillendirme fırsatı sunar. Yazılım danışmanları, işletmelerin süreçlerini optimize eder, verimliliği artırır ve maliyetleri azaltır.\r\n    </li>\r\n    <li>\r\n        <strong>Eğitim ve Yetenek Geliştirme:</strong> Dijital dönüşüm sürecinde, personelin eğitimi ve yetenek geliştirilmesi önemlidir. Yazılım danışmanları, işletmelerin personeline uygun eğitim programları ve yetenek geliştirme fırsatları sunar.\r\n    </li>\r\n    <li>\r\n        <strong>Güvenlik ve Uyum:</strong> Dijital dönüşüm sürecinde güvenlik ve uyum konuları büyük önem taşır. Yazılım danışmanları, işletmelerin güvenlik gereksinimlerini belirler ve uygun güvenlik önlemlerini uygular.\r\n    </li>\r\n</ul>\r\n\r\n<h6>Bizim Hizmetlerimiz:</h6>\r\n\r\n<p>Şirketimiz, yazılım danışmanlığı ve strateji alanında uzmanlaşmış bir ekiple, işletmelerin dijital dönüşüm süreçlerinde yanlarında yer alır. İhtiyaçlarınıza özel olarak geliştirilmiş çözümler sunar, işletmenizin dijital potansiyelini maksimize etmek için stratejik bir yaklaşım benimseriz.</p>\r\n\r\n<p>İşletmenizin dijital geleceğini şekillendirmek ve rekabet avantajı elde etmek için bize bugün katılın!</p>",
+            "subdescription": "İşletmenizin Dijital Dönüşümünü Yönlendirin",
+            "created_at": "2024-05-11T14:28:50.237Z"
+        }
+    }
+]

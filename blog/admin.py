@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
+from django.forms import ValidationError
+from blog.FormModels.IndustryForm import IndustryForm
 from blog.models import BlogPost, Category, CustomUser, Industry,  Tag,Comment
 from django.utils.safestring import mark_safe
-# Register your models here.
 
 class CommentInline(admin.StackedInline):
     model = Comment
@@ -27,10 +28,6 @@ class BlogPostAdmin(admin.ModelAdmin):
             return "No Image"
 
     display_cover_image.short_description = 'Cover Image'
-    def save_model(self, request, obj, form, change):
-        if not obj.author_id:  # Eğer blog gönderisi oluşturulurken yazar belirtilmemişse
-            obj.author = request.user  # Gönderiyi oluşturan kullanıcıyı yazar olarak atar
-        obj.save()
 
     def get_queryset(self, request):
         qs = super().get_queryset(request)
@@ -68,7 +65,6 @@ admin.site.register(BlogPost, BlogPostAdmin)
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-    # Diğer özel ayarlamaları yapabilirsiniz
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
         ('Personal info', {'fields': ('first_name', 'last_name', 'email')}),
@@ -93,11 +89,14 @@ class CommentAdmin(admin.ModelAdmin):
     list_filter = ['created_at']
 
 
-class IndustryAdmin(admin.ModelAdmin):
 
+
+class IndustryAdmin(admin.ModelAdmin):
+    form = IndustryForm
     list_display = ['name', 'user']
     search_fields = ['name']
-    required_fields = ['image']
+    required_fields = ['image','user']
+
     def get_queryset(self, request):
         queryset = super().get_queryset(request)
         if request.user.is_superuser:
@@ -107,6 +106,10 @@ class IndustryAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         if not obj.pk:
             obj.user = request.user
+        try:
+            obj.clean()
+        except ValidationError as e:
+            form.add_error(None, e)
         super().save_model(request, obj, form, change)
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
@@ -116,23 +119,22 @@ class IndustryAdmin(admin.ModelAdmin):
             else:
                 kwargs["queryset"] = CustomUser.objects.filter(username=request.user.username)
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
+
     def get_list_filter(self, request):
         if request.user.is_superuser:
             return ['user']
         return []
-    
+
     def get_form(self, request, obj=None, **kwargs):
-        # Alanların "required" niteliğini ayarlar
-        form = super().get_form(request, obj, **kwargs)
+        # IndustryForm'u super().get_form çağrısıyla kullanmak
+        defaults = {'form': IndustryForm}
+        defaults.update(kwargs)
+        form = super().get_form(request, obj, **defaults)
         for field_name in self.required_fields:
             form.base_fields[field_name].required = True
         return form
 
-
-
 admin.site.register(Industry, IndustryAdmin)
-
-
 admin.site.register(Comment, CommentAdmin)
 
 admin.site.register(CustomUser, CustomUserAdmin)
