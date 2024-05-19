@@ -19,6 +19,7 @@ Bu proje, Django ile geliştirilen bir web uygulamasının otomatik testlerini g
   - [Sorun Giderme](#sorun-giderme)
     - [PostgreSQL Bağlantı Problemleri](#postgresql-bağlantı-problemleri)
     - [Genel Sorunlar](#genel-sorunlar)
+    - [Entrypoint.sh 'do' hatası ](#entrypoint-do-hatası)
 
 ## Gereksinimler
 
@@ -150,3 +151,5 @@ docker ps
   
     
   **Port Çakışmaları:** Uygulama veya veritabanı portlarında çakışma olup olmadığını kontrol edin. Gerekirse, docker-compose.yml dosyasında port numaralarını değiştirin.(port numaralarını değiştirdiğinizde testler düzgün çalışmayacaktır.)
+### Entrypoint do hatası
+   `Syntax error: end of file unexpected (expecting "do")` Bu hatayı alıyorsanız, entrypoint.sh  dosyasını satır sonlarını Unix tarzı (LF) olarak dönüştürerek, doğru sözdizimini sağlayarak ve Docker yapılandırmalarınızı güncelleyerek, PostgreSQL'in hazır olduğunu doğruladıktan sonra Django'nun başlatılmasını sağlayabilirsiniz.
