@@ -12,6 +12,7 @@ class LoginTest(unittest.TestCase):
     def setUpClass(cls):
         chrome_options = Options()
         cls.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        cls.driver.set_window_size(1500, 1000) 
         cls.driver.get("http://127.0.0.1:8000")
 
     def setUp(self):

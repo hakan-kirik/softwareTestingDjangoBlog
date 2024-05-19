@@ -12,29 +12,29 @@ def run_selected_tests(choices):
             from .testhomepage import run_tests as run_home_tests
             run_home_tests()
         elif choice == '2':
-            from .userBlogTest import run_blog_tests
+            from .testuserBlogTest import run_blog_tests
             username = 'test'  # superuser olmayan kullanıcı
             password = 'hako123'
             run_blog_tests(username, password)
         elif choice == '3':
             username = 'hako'  # input("Kullanıcı adını giriniz: ")
             password = 'hako123'  # input("Şifreyi giriniz: ")
-            from .adminBlogTest import run_tests as run_admin_blog_tests
+            from .testadminBlogTest import run_tests as run_admin_blog_tests
             run_admin_blog_tests(username, password)
         elif choice == '4':
             username = 'hako'  # input("Kullanıcı adını giriniz: ")
             password = 'hako123'  # input("Şifreyi giriniz: ")
-            from .industryPage import run_industry_tests
+            from .testindustryPage import run_industry_tests
             run_industry_tests(username, password)
         elif choice == '5':
             username = 'hako'  # input("Kullanıcı adını giriniz: ")
             password = 'hako123'  # input("Şifreyi giriniz: ")
-            from .adminIndustriesTest import run_industry_tests
+            from .testadminIndustriesTest import run_industry_tests
             run_industry_tests(username, password)
         elif choice == '6':
             username = input("Kullanıcı adını giriniz: ")
             password = input("Şifreyi giriniz: ")
-            from .modalLoginTest import run_tests as run_login_tests
+            from .testmodalLoginTest import run_tests as run_login_tests
             run_login_tests(username, password)
         elif choice == '0':
             print("Çıkış yapılıyor...")

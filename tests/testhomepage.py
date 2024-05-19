@@ -15,6 +15,7 @@ class HomePageTest(unittest.TestCase):
         chrome_options = Options()
         # chrome_options.add_argument("--headless")  # Arayüz gösterilmeden çalıştır
         cls.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        cls.driver.set_window_size(1500, 1000) 
         cls.driver.get(cls.base_url)
         print("Tarayıcı başlatıldı ve ana sayfaya gidildi.")
 

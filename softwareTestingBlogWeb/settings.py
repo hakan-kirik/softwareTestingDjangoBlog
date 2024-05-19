@@ -87,8 +87,8 @@ DATABASES = {
         'NAME': 'hakodb',
         'USER':'postgres',
         'PASSWORD':'hako.test',
-        'HOST':'localhost',
-        'PORT':'5454'
+        'HOST':'hakopostgre',
+        'PORT':'5432'
     }
 }
 

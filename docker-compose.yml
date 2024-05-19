@@ -13,27 +13,34 @@ services:
       POSTGRES_PASSWORD: hako.test
       POSTGRES_USER: postgres
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d hakodb"]
       interval: 5s
       retries: 5
       timeout: 5s
     networks:
       - hako
-  # django:
-  #   build:
-  #     context: ./
-  #   restart: always
-  #   ports:
-  #     - "4000:3000"
-  #   depends_on: 
-  #     - hakopostgre
-  #   links:
-  #   - hakopostgre:hakopostgre
-  #   networks:
-  #     - hako
+
+  django:
+    build:
+      context: ./
+    restart: always
+    ports:
+      - "8000:3000"
+    depends_on: 
+      hakopostgre:
+        condition: service_healthy
+    links:
+      - hakopostgre:hakopostgre
+    environment:
+      DATABASE: postgres
+      SQL_HOST: hakopostgre
+      SQL_PORT: 5432
+      SQL_DATABASE: hakodb
+      SQL_USER: postgres
+      SQL_PASSWORD: hako.test
+    networks:
+      - hako
 
 networks:
   hako:
     driver: bridge
-
-    
