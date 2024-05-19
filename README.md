@@ -11,6 +11,7 @@ Bu proje, Django ile geliştirilen bir web uygulamasının otomatik testlerini g
     - [1. Gerekli Dosyaların İndirilmesi](#1-gerekli-dosyaların-i̇ndirilmesi)
     - [2. Docker ve Docker Compose Kurulumu](#2-docker-ve-docker-compose-kurulumu)
     - [3. Projenin Çalıştırılması](#3-projenin-çalıştırılması)
+    - [4. Projenin Default Kullanıcıları](#4-projenin-default-kullanıcıları)
   - [Testlerin Çalıştırılması](#testlerin-çalıştırılması)
     - [Test Menüsünün Kullanılması](#test-menüsünün-kullanılması)
     - [Menü Seçenekleri](#menü-seçenekleri)
@@ -51,6 +52,13 @@ Projenin kök dizininde aşağıdaki komutları çalıştırarak PostgreSQL ve D
 docker compose up -d 
 
 ```
+### 4. Projenin Default Kullanıcıları
+
+* Superuser Kullanıcı Adı :**hako** 
+* Superuser Kullanıcı Şifre:**hako123**
+>
+* Normal Kullanıcı Adı:**test**
+* Normal Kullanıcı Şifre:**hako123**
 
 Testlerin Çalıştırılması
 ------------------------
