@@ -3,7 +3,6 @@
 if [ "$DATABASE" = "postgres" ]
 then
     echo "Waiting for PostgreSQL..."
-    RUN apt-get update && apt-get install -y netcat
     while ! nc -z $SQL_HOST $SQL_PORT; do
       sleep 0.1
     done
