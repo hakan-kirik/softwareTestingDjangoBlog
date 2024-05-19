@@ -71,17 +71,17 @@ Bu komut, size bir menü sunarak hangi testlerin çalıştırılacağını seçm
 
 Menüdeki seçenekler şu şekildedir:
 
-1.  Ana Sayfa, Navigasyon ve İmaj Testleri Çalıştır
+1.  Ana Sayfa, Navigasyon ve imaj Testleri Çalıştır
     
 2.  Kullanıcı Blog Testleri Çalıştır
+
+3.  Admin Blog Testlerini Çalıştır (kapsamlı test)
     
-3.  Endüstri (Hizmet) Sayfaları Testleri Çalıştır
+4.  Endüstri (Hizmet) Sayfaları Testleri Çalıştır
     
-4.  Popup Login Testlerini Çalıştır
+5.  Admin Endüstri Testlerini Çalıştır (kapsamlı test)
     
-5.  Admin Blog Testlerini Çalıştır (kapsamlı test)
-    
-6.  Admin Endüstri Testlerini Çalıştır (kapsamlı test)
+6.  Popup Login Testlerini Çalıştır
     
 
 Birden çok test seçeneğini çalıştırmak için seçimlerinizi virgül ile ayırarak girebilirsiniz. Örneğin:
@@ -98,15 +98,15 @@ Yapılanlar ve Çalışma Prensibi
 
 *   **Ana Sayfa ve Navigasyon Testleri:** Ana sayfanın ve navigasyon linklerinin doğru çalıştığını kontrol eder.
     
-*   **Kullanıcı Blog Testleri:** Blog ekleme, güncelleme ve silme işlemlerinin doğru çalıştığını kontrol eder.
+*   **Kullanıcı Blog Testleri:** Blog ekleme, güncelleme ve silme işlemlerinin doğru çalıştığını ve web sayfasında görünümünü kontrol eder.
     
-*   **Endüstri Sayfaları Testleri:** Endüstri sayfalarının eklenmesi, güncellenmesi ve silinmesini kontrol eder.
+*   **Endüstri Sayfaları Testleri:** Endüstri sayfalarının eklenmesi, güncellenmesi ve silinmesini ve web sayfasında görünümünü kontrol eder.
     
 *   **Popup Login Testleri:** Kullanıcı giriş işlemlerinin doğru çalıştığını kontrol eder.
     
-*   **Admin Blog Testleri:** Admin paneli üzerinden blog ekleme, güncelleme ve silme işlemlerinin doğru çalıştığını kontrol eder.
+*   **Admin Blog Testleri:** Admin paneli üzerinden blog ekleme, güncelleme, silme ve kolon kısıtlama işlemlerinin doğru çalıştığını kontrol eder.
     
-*   **Admin Endüstri Testleri:** Admin paneli üzerinden endüstri ekleme, güncelleme ve silme işlemlerinin doğru çalıştığını kontrol eder.
+*   **Admin Endüstri Testleri:** Admin paneli üzerinden endüstri ekleme, güncelleme , silme  ve kolon kısıtlama işlemlerinin doğru çalıştığını kontrol eder.
   
 
 ## Sorun Giderme
